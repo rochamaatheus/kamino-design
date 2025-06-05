@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência Kamino | Soluções de Marketing Digital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
+    <!-- Botão flutuante do WhatsApp -->
+    <aside
+      class="fixed bottom-8 right-8 z-50"
+      aria-label="Contato via WhatsApp"
+    >
+      <a
+        href="https://wa.me/5547999131564?text=Ol%C3%A1%20Ag%C3%AAncia%20Kamino%2C%20podemos%20conversar%3F"
+        class="whatsapp-bubble bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-xl hover:bg-[#128C7E] transition-colors duration-300"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir conversa no WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </aside>
+
+    <!-- Cabeçalho e navegação principal -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+      <nav
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        aria-label="Navegação principal"
+      >
+        <div class="relative flex items-center justify-between h-20">
+          <!-- Logo à esquerda -->
+          <div class="flex-shrink-0">
+            <a
+              href="#inicio"
+              aria-label="Início"
+              class="inline-block opacity-0 animate-slide-up will-change-transform"
+            >
+              <img
+                src="./src/img/logo.png"
+                alt="Logo Agência Kamino"
+                class="w-[200px] transition duration-300 ease-in-out hover:scale-110 hover:brightness-125 will-change-transform origin-center"
+              />
+            </a>
+          </div>
+
+          <!-- Menu centralizado -->
+          <ul
+            class="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8"
+          >
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#servicos"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Serviços
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#diferenciais"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Diferenciais
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#planos"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Planos
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#depoimentos"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Depoimentos
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#contato"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Contato
+              </a>
+            </li>
+          </ul>
+
+          <!-- Botão à direita -->
+          <div
+            class="hidden md:block opacity-0 animate-slide-up will-change-transform"
+          >
+            <a href="#contato" class="btn-pulse"> Solicitar Orçamento </a>
+          </div>
+
+          <!-- Botão mobile -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-primary hover:text-secondary focus:outline-none"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main id="main-content">
+      <!-- Seção Hero -->
+      <section
+        id="inicio"
+        class="relative gradient-bg text-white hero-clip pb-20 overflow-hidden"
+        aria-label="Apresentação"
+      >
+        <img
+          src="./src/img/bg.png"
+          alt=""
+          class="absolute left-0 max-w-[800px] opacity-40 w-full z-[-1] pointer-events-none"
+        />
+
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 relative z-[1] flex flex-col md:flex-row items-center"
+        >
+          <!-- Texto principal -->
+          <div
+            class="md:w-1/2 mb-12 md:mb-0 opacity-0 animate-slide-left will-change-transform"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
+              Posicionamento, performance e presença digital de
+              <span class="text-accent">alto impacto</span>
+            </h1>
+            <p class="text-xl mb-8 text-blue-100">
+              Estratégias de marketing orientadas por dados, sites centrados em
+              conversão e agentes de IA que potencializam resultados.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <!-- Botão 1: Agendar Consultoria -->
+              <a
+                href="#contato"
+                class="bg-white text-primary px-8 py-3 rounded-md font-bold text-center transition-all duration-300 ease-in-out shadow-md hover:shadow-xl hover:-translate-y-1 hover:bg-blue-50 hover:text-primary will-change-transform"
+              >
+                Agendar Consultoria Gratuita
+              </a>
+
+              <!-- Botão 2: Conhecer Serviços -->
+              <a
+                href="#servicos"
+                class="border-2 border-white text-white px-8 py-3 rounded-md font-bold text-center transition-all duration-300 ease-in-out hover:bg-white hover:text-primary hover:-translate-y-1 hover:shadow-lg will-change-transform"
+              >
+                Conhecer Serviços
+              </a>
+            </div>
+          </div>
+
+          <!-- Imagem & métrica -->
+          <figure
+            class="md:w-1/2 relative min-h-[150px] animate-slide-up opacity-0"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+              alt="Equipe da Kamino analisando performance de campanhas"
+              class="rounded-xl shadow-2xl border-8 border-white/20"
+            />
+
+            <figcaption
+              class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-accent p-4 rounded-lg shadow-lg text-center will-change-transform"
+            >
+              <!-- Container do número com posição relativa -->
+              <span
+                class="relative inline-block font-bold text-lg text-white leading-none"
+              >
+                <span id="roi-counter">0%</span>
+
+                <!-- Ícone flutuando à direita -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-green-400 animate-bounce absolute top-[-1px] left-full -translate-y-1/2 ml-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </span>
+
+              <!-- Texto abaixo -->
+              <span class="block text-white text-sm mt-1">
+                Crescimento médio no retorno sobre investimento em campanhas
+                gerenciadas
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Como Fazemos -->
+      <section
+        id="comofazemos"
+        class="py-16 bg-white"
+        aria-labelledby="titulo-comofazemos"
+      >
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
+          <!-- Bloco título -->
+          <div>
+            <header data-animate="slide-left" class="opacity-0">
+              <span
+                class="inline-block bg-light text-primary px-3 py-1 rounded-full text-sm font-semibold"
+              >
+                Como fazemos
+              </span>
+              <h2
+                id="titulo-comofazemos"
+                class="mt-4 text-4xl font-bold text-primary"
+              >
+                Transformar marcas, negócios e pessoas.
+              </h2>
+              <p class="mt-2 text-xl text-gray-600">
+                O que realmente importa para seu negócio?
+              </p>
+            </header>
+          </div>
+
+          <!-- Descrição alinhada embaixo -->
+          <div class="flex items-end">
+            <p
+              class="text-gray-600 leading-relaxed opacity-0 text-lg md:text-xl mt-8 md:mt-12"
+              data-animate="slide-right"
+            >
+              Crescer de forma estratégica não é opção
+              <span class="text-accent">—</span> é necessidade. Ajudamos
+              empresas a se tornarem referência no mercado, com posicionamento
+              forte, branding inteligente e performance que gera resultado.
+              Alinhamos comunicação, presença digital e autoridade para
+              transformar negócios em marcas memoráveis
+              <span class="text-accent">—</span> e escolhidas.
+            </p>
+          </div>
+
+          <!-- Imagem ilustrativa -->
+          <figure class="md:col-span-2 mt-8 opacity-0" data-animate="slide-up">
+            <img
+              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+              alt="Equipe colaborando em laptop"
+              class="w-full h-64 object-cover rounded-xl shadow-lg"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Estatísticas -->
+      <section class="bg-white py-16" aria-label="Nossos números">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+        >
+          <div class="p-6">
+            <p class="text-4xl font-bold text-primary mb-2" data-counter="500">
+              0
+            </p>
+            <p class="text-gray-600">Clientes Satisfeitos</p>
+          </div>
+          <div class="p-6">
+            <p
+              class="text-4xl font-bold text-primary mb-2"
+              data-counter="10000000"
+            >
+              0
+            </p>
+            <p class="text-gray-600">Visitas Geradas</p>
+          </div>
+          <div class="p-6">
+            <p
+              class="text-4xl font-bold text-primary mb-2"
+              data-counter="95"
+              data-suffix="%"
+            >
+              0
+            </p>
+            <p class="text-gray-600">Taxa de Sucesso</p>
+          </div>
+          <div class="p-6">
+            <p class="text-4xl font-bold text-primary mb-2">24&nbsp;/&nbsp;7</p>
+            <p class="text-gray-600">Suporte Contínuo</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section
+        id="servicos"
+        class="py-20 bg-light"
+        aria-labelledby="titulo-servicos"
+      >
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-start"
+        >
+          <!-- Intro serviços -->
+          <header>
+            <span
+              class="inline-block bg-white text-primary px-3 py-1 rounded-full font-semibold"
+              >O que fazemos</span
+            >
+            <h2
+              id="titulo-servicos"
+              class="text-4xl font-bold text-primary mt-4 mb-6"
+            >
+              Nossos serviços
+            </h2>
+            <a
+              href="#contato"
+              class="inline-block bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-secondary transition-colors duration-300"
+            >
+              Comece um projeto
+            </a>
+
+            <p class="mt-6 text-gray-600">
+              Acreditamos que cada etapa do marketing digital deve ser
+              integrada: da estratégia à execução, passando por otimização
+              contínua e design centrado no usuário.
+            </p>
+            <ul class="mt-4 flex space-x-6 text-gray-700">
+              <li class="flex items-center">
+                <i class="fas fa-lightbulb text-accent mr-2"></i>Estratégia
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-chart-line text-accent mr-2"></i>Performance
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-paint-brush text-accent mr-2"></i>Design
+              </li>
+            </ul>
+          </header>
+
+          <!-- Cards de serviço -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Growth -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              aria-labelledby="servico-growth"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 id="servico-growth" class="text-xl font-bold text-primary">
+                  Growth
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Nosso objetivo é contribuir para o crescimento do seu negócio
+                por meio de decisões baseadas em dados. Analisamos
+                profundamente…
+              </p>
+              <a
+                href="#"
+                class="text-accent font-medium hover:underline mt-4 inline-block"
+                >Ver mais →</a
+              >
+            </article>
+
+            <!-- Branding -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              aria-labelledby="servico-branding"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-search"></i>
+                </div>
+                <h3
+                  id="servico-branding"
+                  class="text-xl font-bold text-primary"
+                >
+                  Branding
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Mais do que marcas, criamos histórias que se conectam de forma
+                verdadeira com seu público, refletindo a essência do seu
+                negócio.
+              </p>
+              <a
+                href="#"
+                class="text-accent font-medium hover:underline mt-4 inline-block"
+                >Ver mais →</a
+              >
+            </article>
+
+            <!-- Performance -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              aria-labelledby="servico-performance"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3
+                  id="servico-performance"
+                  class="text-xl font-bold text-primary"
+                >
+                  Performance
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Cada ação é cuidadosamente planejada para gerar resultados reais
+                e sustentáveis. Com uma abordagem data-driven, garantimos…
+              </p>
+              <a
+                href="#"
+                class="text-accent font-medium hover:underline mt-4 inline-block"
+                >Ver mais →</a
+              >
+            </article>
+
+            <!-- Design & XP -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              aria-labelledby="servico-design"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3 id="servico-design" class="text-xl font-bold text-primary">
+                  Design e Experiência
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Soluções completas para todos os pontos de contato com sua
+                marca, garantindo uma experiência fluida e impactante para os
+                usuários.
+              </p>
+              <a
+                href="#"
+                class="text-accent font-medium hover:underline mt-4 inline-block"
+                >Ver mais →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diferenciais -->
+      <section
+        id="diferenciais"
+        class="py-20 bg-white"
+        aria-labelledby="titulo-diferenciais"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center mb-16">
+            <h2
+              id="titulo-diferenciais"
+              class="text-3xl font-bold text-primary mb-4"
+            >
+              Por que escolher a Kamino
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Nossa abordagem combina eficiência, dados e suporte dedicado
+            </p>
+          </header>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Lista de diferenciais -->
+            <ul class="space-y-8" aria-label="Lista de diferenciais">
+              <li class="flex items-start">
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
+                  ><i class="fas fa-bolt text-xl" aria-hidden="true"></i
+                ></span>
+                <div>
+                  <h3 class="text-xl font-bold text-primary mb-2">
+                    Implementação Rápida
+                  </h3>
+                  <p class="text-gray-600">
+                    Campanhas no ar em até setenta e duas horas após o briefing.
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
+                  ><i class="fas fa-chart-bar text-xl" aria-hidden="true"></i
+                ></span>
+                <div>
+                  <h3 class="text-xl font-bold text-primary mb-2">
+                    Estratégias Baseadas em Dados
+                  </h3>
+                  <p class="text-gray-600">
+                    Decisões guiadas por métricas e análises, sem achismos.
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
+                  ><i class="fas fa-headset text-xl" aria-hidden="true"></i
+                ></span>
+                <div>
+                  <h3 class="text-xl font-bold text-primary mb-2">
+                    Suporte Dedicado
+                  </h3>
+                  <p class="text-gray-600">
+                    Seu gestor de conta disponível por chamada, e-mail ou
+                    WhatsApp.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Imagem -->
+            <figure class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                alt="Dashboard de resultados em um notebook"
+                class="rounded-xl shadow-xl"
+              />
+
+              <figcaption
+                class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 text-center"
+              >
+                <span class="text-3xl font-bold text-primary block">87%</span>
+                <span class="text-gray-600">Retenção média de clientes</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planos -->
+      <section
+        id="planos"
+        class="py-20 bg-light"
+        aria-labelledby="titulo-planos"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center mb-16">
+            <h2 id="titulo-planos" class="text-3xl font-bold text-primary mb-4">
+              Planos Transparentes
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Escolha o plano ideal para o seu negócio
+            </p>
+          </header>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8" role="list">
+            <!-- Plano Básico -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover"
+              aria-labelledby="plano-basico"
+            >
+              <header class="p-8 border-b border-gray-200">
+                <h3
+                  id="plano-basico"
+                  class="text-xl font-bold text-primary mb-2"
+                >
+                  Básico
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Perfeito para quem está começando
+                </p>
+                <p class="mb-6">
+                  <span class="text-4xl font-bold text-primary">R$ 499</span
+                  ><span class="text-gray-600"> por mês</span>
+                </p>
+                <a
+                  href="#contato"
+                  class="block bg-primary text-white text-center py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
+                >
+                  Assinar
+                </a>
+              </header>
+              <ul class="p-8 space-y-4">
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Setup
+                  inicial
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Gestão de
+                  campanhas básicas
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Relatório
+                  mensal
+                </li>
+                <li class="flex items-center text-gray-400">
+                  <i class="fas fa-times-circle mr-2"></i>Suporte dedicado
+                </li>
+              </ul>
+            </article>
+
+            <!-- Plano Crescimento -->
+            <article
+              class="relative bg-white rounded-xl shadow-lg overflow-hidden card-hover transform scale-105"
+              aria-labelledby="plano-crescimento"
+            >
+              <div
+                class="absolute top-0 right-0 bg-accent text-white px-4 py-1 text-sm font-bold rounded-bl-lg"
+              >
+                Mais popular
+              </div>
+              <header class="p-8 border-b border-gray-200">
+                <h3
+                  id="plano-crescimento"
+                  class="text-xl font-bold text-primary mb-2"
+                >
+                  Crescimento
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ideal para expandir suas vendas
+                </p>
+                <p class="mb-6">
+                  <span class="text-4xl font-bold text-primary">R$ 1.299</span
+                  ><span class="text-gray-600"> por mês</span>
+                </p>
+                <a
+                  href="#contato"
+                  class="block bg-primary text-white text-center py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
+                >
+                  Assinar
+                </a>
+              </header>
+              <ul class="p-8 space-y-4">
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Anúncios
+                  avançados
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Otimização
+                  contínua
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Relatórios
+                  semanais
+                </li>
+                <li class="flex items-center text-gray-400">
+                  <i class="fas fa-times-circle mr-2"></i>Criação de páginas de
+                  destino
+                </li>
+              </ul>
+            </article>
+
+            <!-- Plano Corporativo -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover"
+              aria-labelledby="plano-corporativo"
+            >
+              <header class="p-8 border-b border-gray-200">
+                <h3
+                  id="plano-corporativo"
+                  class="text-xl font-bold text-primary mb-2"
+                >
+                  Corporativo
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Para empresas com necessidades avançadas
+                </p>
+                <p class="mb-6">
+                  <span class="text-4xl font-bold text-primary">R$ 2.999</span
+                  ><span class="text-gray-600"> por mês</span>
+                </p>
+                <a
+                  href="#contato"
+                  class="block bg-primary text-white text-center py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
+                >
+                  Assinar
+                </a>
+              </header>
+              <ul class="p-8 space-y-4">
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i
+                  >Consultoria personalizada
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Gestão
+                  completa de tráfego
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Criação de
+                  páginas de destino
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-accent mr-2"></i>Atendente
+                  de Inteligência Artificial
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="mt-12 text-center text-gray-600">
+            Precisa de algo personalizado? Nós ajudamos você.
+          </p>
+          <div class="text-center">
+            <a
+              href="#contato"
+              class="inline-block border-2 border-primary text-primary px-6 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition-colors duration-300"
+            >
+              Peça um Orçamento
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section
+        id="depoimentos"
+        class="py-20 bg-white"
+        aria-labelledby="titulo-depoimentos"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center mb-16">
+            <h2
+              id="titulo-depoimentos"
+              class="text-3xl font-bold text-primary mb-4"
+            >
+              O que nossos clientes dizem
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Confira experiências reais de quem já confia na Kamino
+            </p>
+          </header>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <!-- Card depoimento 1 -->
+            <article
+              class="bg-light p-8 rounded-xl flex flex-col justify-between"
+              aria-label="Depoimento de Sarah Oliveira"
+            >
+              <header>
+                <div class="text-yellow-400 text-xl mb-6" aria-hidden="true">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 mb-6">
+                  “O atendimento automatizado aumentou nossa eficiência em
+                  setenta por cento. A equipe da Kamino é incrível!”
+                </p>
+              </header>
+              <footer class="flex items-center mt-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/43.jpg"
+                  alt="Foto de Sarah Oliveira"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="font-bold text-primary">Sarah Oliveira</p>
+                  <p class="text-gray-500 text-sm">
+                    Chief Executive Officer, TechSol
+                  </p>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Card depoimento 2 -->
+            <article
+              class="bg-light p-8 rounded-xl flex flex-col justify-between"
+              aria-label="Depoimento de Carlos Santos"
+            >
+              <header>
+                <div class="text-yellow-400 text-xl mb-6" aria-hidden="true">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 mb-6">
+                  “Nosso retorno sobre investimento cresceu de dois para cinco
+                  por um em apenas três meses.”
+                </p>
+              </header>
+              <footer class="flex items-center mt-4">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Foto de Carlos Santos"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="font-bold text-primary">Carlos Santos</p>
+                  <p class="text-gray-500 text-sm">
+                    Diretor de Marketing, LojaFácil
+                  </p>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Card depoimento 3 -->
+            <article
+              class="bg-light p-8 rounded-xl flex flex-col justify-between"
+              aria-label="Depoimento de Mariana Lima"
+            >
+              <header>
+                <div class="text-yellow-400 text-xl mb-6" aria-hidden="true">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text-gray-600 mb-6">
+                  “O trabalho foi entregue no prazo e superou nossas
+                  expectativas.”
+                </p>
+              </header>
+              <footer class="flex items-center mt-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/65.jpg"
+                  alt="Foto de Mariana Lima"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="font-bold text-primary">Mariana Lima</p>
+                  <p class="text-gray-500 text-sm">Fundadora, BoutiqueChic</p>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section
+        id="cta"
+        class="relative gradient-bg text-white py-20 overflow-hidden"
+        aria-labelledby="titulo-cta"
+      >
+        <img
+          src="./src/img/bg.png"
+          alt=""
+          class="absolute top-[-50px] left-0 max-w-[450px] opacity-40 w-full z-[1] pointer-events-none"
+        />
+        <div
+          class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-[1]"
+        >
+          <h2 id="titulo-cta" class="text-3xl md:text-4xl font-bold mb-6">
+            Pronto para transformar seu negócio?
+          </h2>
+          <p class="text-xl text-blue-100 mb-8">
+            Agende uma consultoria gratuita de trinta minutos com nossos
+            especialistas.
+          </p>
+          <a
+            href="#contato"
+            class="bg-white text-primary px-8 py-3 rounded-md font-bold hover:bg-blue-50 transition-colors duration-300 inline-block"
+          >
+            Agendar Consultoria
+          </a>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section
+        id="contato"
+        class="py-20 bg-white"
+        aria-labelledby="titulo-contato"
+      >
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+        >
+          <!-- Bloco informações -->
+          <header>
+            <h2
+              id="titulo-contato"
+              class="text-3xl font-bold text-primary mb-4"
+            >
+              Fale conosco
+            </h2>
+            <p class="text-gray-600 mb-8">
+              Preencha o formulário e retornaremos em até vinte e quatro horas.
+            </p>
+
+            <address class="not-italic space-y-6">
+              <div class="flex items-start">
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></span>
+                <div>
+                  <h3 class="font-bold text-primary mb-1">Nosso escritório</h3>
+                  <p class="text-gray-600">
+                    Avenida Central, 1234<br />Joinville, SC
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                <div>
+                  <h3 class="font-bold text-primary mb-1">E-mail</h3>
+                  <a href="mailto:contato@kamino.com.br" class="text-gray-600"
+                    >contato@kamino.com.br</a
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
+                  ><i class="fas fa-phone-alt"></i
+                ></span>
+                <div>
+                  <h3 class="font-bold text-primary mb-1">Telefone</h3>
+                  <p class="text-gray-600">
+                    <a href="tel:+5547999999999">+55 (47) 99999-9999</a
+                    ><br />Seg-Sex, 9 h – 18 h
+                  </p>
+                </div>
+              </div>
+            </address>
+          </header>
+
+          <!-- Formulário -->
+          <div class="bg-light p-8 rounded-xl shadow-md">
+            <form id="contatoForm" aria-label="Formulário de contato">
+              <div class="mb-6">
+                <label for="nome" class="block text-gray-700 font-medium mb-2"
+                  >Nome completo</label
+                >
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="emailForm"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Endereço de e-mail</label
+                >
+                <input
+                  type="email"
+                  id="emailForm"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="telefoneForm"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Número de telefone</label
+                >
+                <input
+                  type="tel"
+                  id="telefoneForm"
+                  name="telefone"
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="servicoForm"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Serviço de interesse</label
+                >
+                <select
+                  id="servicoForm"
+                  name="servico"
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                >
+                  <option value="">Selecione o serviço</option>
+                  <option value="marketing">Marketing Digital</option>
+                  <option value="trafego">Tráfego Pago</option>
+                  <option value="paginas">Criação de Páginas de Destino</option>
+                  <option value="chatbot">
+                    Atendente de Inteligência Artificial
+                  </option>
+                </select>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="mensagem"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Sua mensagem</label
+                >
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="4"
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
+              >
+                Enviar mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer
+      class="gradient-bg text-white py-12"
+      aria-labelledby="titulo-rodape"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Coluna 1 -->
+          <div>
+            <h2 id="titulo-rodape" class="text-xl font-bold mb-4">
+              Agência Kamino
+            </h2>
+            <p class="text-gray-300 mb-4">
+              Transformando negócios com marketing digital e tecnologia.
+            </p>
+            <nav aria-label="Redes sociais">
+              <ul class="flex space-x-4">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white"
+                    aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white"
+                    aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white"
+                    aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white"
+                    aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Coluna 2 – Serviços -->
+          <nav aria-label="Links de serviços">
+            <h3 class="text-lg font-bold mb-4">Serviços</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#servicos" class="text-gray-300 hover:text-white"
+                  >Marketing Digital</a
+                >
+              </li>
+              <li>
+                <a href="#servicos" class="text-gray-300 hover:text-white"
+                  >Tráfego Pago</a
+                >
+              </li>
+              <li>
+                <a href="#servicos" class="text-gray-300 hover:text-white"
+                  >Páginas de Destino</a
+                >
+              </li>
+              <li>
+                <a href="#servicos" class="text-gray-300 hover:text-white"
+                  >Atendente de Inteligência Artificial</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Coluna 3 – Empresa -->
+          <nav aria-label="Links institucionais">
+            <h3 class="text-lg font-bold mb-4">Empresa</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Sobre nós</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Cases</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Carreiras</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Coluna 4 – Newsletter -->
+          <section aria-label="Inscrição na newsletter">
+            <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+            <p class="text-gray-300 mb-4">
+              Receba novidades e insights diretamente no seu e-mail.
+            </p>
+            <form class="flex" aria-label="Formulário de newsletter">
+              <label for="newsletter-email" class="sr-only">Seu e-mail</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                required
+                placeholder="Seu e-mail"
+                class="px-4 py-2 rounded-l-md w-full focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-accent px-4 py-2 rounded-r-md hover:bg-blue-500 transition-colors duration-300"
+                aria-label="Inscrever"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </section>
+        </div>
+
+        <!-- Créditos finais -->
+        <div
+          class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-300 mb-4 md:mb-0">
+            © 2025 Agência Kamino. Todos os direitos reservados.
+          </p>
+          <nav aria-label="Links legais">
+            <ul class="flex space-x-6">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Termos de Serviço</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Cookies</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      /* Menu mobile */
+      const btnMenu = document.getElementById('mobile-menu-button');
+      const menuMobile = document.getElementById('mobile-menu');
+      btnMenu.addEventListener('click', () => {
+        menuMobile.classList.toggle('hidden');
+        btnMenu.setAttribute(
+          'aria-expanded',
+          !menuMobile.classList.contains('hidden'),
+        );
+      });
+
+      /* Scroll suave */
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const destino = document.querySelector(this.getAttribute('href'));
+          if (destino) {
+            e.preventDefault();
+            destino.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (!menuMobile.classList.contains('hidden')) {
+              menuMobile.classList.add('hidden');
+              btnMenu.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+
+      /* Formulário de contato (mock) */
+      const formContato = document.getElementById('contatoForm');
+      formContato.addEventListener('submit', e => {
+        e.preventDefault();
+        const dados = {
+          nome: formContato.nome.value,
+          email: formContato.email.value,
+          telefone: formContato.telefone.value,
+          servico: formContato.servico.value,
+          mensagem: formContato.mensagem.value,
+        };
+        console.log(dados);
+        alert('Mensagem enviada! Retornaremos em até 24 horas.');
+        formContato.reset();
+      });
+    </script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
