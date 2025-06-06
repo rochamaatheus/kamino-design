@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{html,js}'],
+  safelist: [
+    'animate-slide-right',
+    'animate-slide-left',
+    'animate-slide-up',
+    'animate-slide-down',
+  ],
   theme: {
     extend: {
       colors: {

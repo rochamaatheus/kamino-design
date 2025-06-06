@@ -140,12 +140,12 @@
             <h1
               class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              Posicionamento, performance e presença digital de
-              <span class="text-accent">alto impacto</span>
+              Performance e Presença Digital que
+              <span class="text-accent">vendem mais</span>
             </h1>
             <p class="text-xl mb-8 text-blue-100">
-              Estratégias de marketing orientadas por dados, sites centrados em
-              conversão e agentes de IA que potencializam resultados.
+              Marketing baseado em dados, sites que convertem e IA para turbinar
+              resultados.
             </p>
 
             <div
@@ -174,7 +174,7 @@
             class="md:w-1/2 relative min-h-[150px] animate-slide-up opacity-0"
           >
             <img
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+              src="./src/img/dash.png"
               alt="Equipe da Kamino analisando performance de campanhas"
               class="rounded-xl shadow-2xl border-8 border-white/20"
             />
@@ -186,6 +186,11 @@
               <span
                 class="relative inline-block font-bold text-lg text-white leading-none"
               >
+                <span
+                  class="absolute left-[-25px] text-[11px] text-white/70 tracking-wide"
+                >
+                  ROI
+                </span>
                 <span id="roi-counter">0%</span>
 
                 <!-- Ícone flutuando à direita -->
@@ -207,8 +212,10 @@
 
               <!-- Texto abaixo -->
               <span class="block text-white text-sm mt-1">
-                Crescimento médio no retorno sobre investimento em campanhas
-                gerenciadas
+                Campanhas que trazem mais dinheiro
+              </span>
+              <span class="block text-white text-xs mt-0.5">
+                Em média, R$ 1 vira R$ 2,48
               </span>
             </figcaption>
           </figure>
@@ -218,15 +225,15 @@
       <!-- Como Fazemos -->
       <section
         id="comofazemos"
-        class="py-16 bg-white"
+        class="pt-16 bg-white"
         aria-labelledby="titulo-comofazemos"
       >
         <div
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8"
         >
-          <!-- Bloco título -->
-          <div>
-            <header data-animate="slide-left" class="opacity-0">
+          <!-- Bloco título + imagem lateral -->
+          <div class="flex items-start">
+            <header data-animate="slide-left" class="opacity-0 w-max">
               <span
                 class="inline-block bg-light text-primary px-3 py-1 rounded-full text-sm font-semibold"
               >
@@ -236,12 +243,20 @@
                 id="titulo-comofazemos"
                 class="mt-4 text-4xl font-bold text-primary"
               >
-                Transformar marcas, negócios e pessoas.
+                Quem é visto é escolhido
               </h2>
               <p class="mt-2 text-xl text-gray-600">
-                O que realmente importa para seu negócio?
+                Quando a mensagem é clara, a escolha é fácil.
               </p>
             </header>
+
+            <div data-animate="slide-up" class="opacity-0">
+              <img
+                src="./src/img/destaque.png"
+                alt="destaque"
+                class="w-[80px] h-auto mt-12 ml-14 animate-bounce inline-block"
+              />
+            </div>
           </div>
 
           <!-- Descrição alinhada embaixo -->
@@ -250,13 +265,9 @@
               class="text-gray-600 leading-relaxed opacity-0 text-lg md:text-xl mt-8 md:mt-12"
               data-animate="slide-right"
             >
-              Crescer de forma estratégica não é opção
-              <span class="text-accent">—</span> é necessidade. Ajudamos
-              empresas a se tornarem referência no mercado, com posicionamento
-              forte, branding inteligente e performance que gera resultado.
-              Alinhamos comunicação, presença digital e autoridade para
-              transformar negócios em marcas memoráveis
-              <span class="text-accent">—</span> e escolhidas.
+              Crescer com estratégia é o que separa empresas esquecidas de
+              marcas que dominam. A gente organiza sua mensagem, mostra seu
+              valor e te coloca na frente de quem realmente quer comprar.
             </p>
           </div>
 
@@ -318,7 +329,7 @@
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-start"
         >
           <!-- Intro serviços -->
-          <header>
+          <header data-animate="slide-left" class="opacity-0">
             <span
               class="inline-block bg-white text-primary px-3 py-1 rounded-full font-semibold"
               >O que fazemos</span
@@ -342,14 +353,29 @@
               contínua e design centrado no usuário.
             </p>
             <ul class="mt-4 flex space-x-6 text-gray-700">
-              <li class="flex items-center">
-                <i class="fas fa-lightbulb text-accent mr-2"></i>Estratégia
+              <li
+                class="flex items-center transition-transform duration-300 hover:-translate-y-1 hover:text-accent"
+              >
+                <i
+                  class="fas fa-lightbulb text-accent mr-2 transition-colors duration-300"
+                ></i
+                >Estratégia
               </li>
-              <li class="flex items-center">
-                <i class="fas fa-chart-line text-accent mr-2"></i>Performance
+              <li
+                class="flex items-center transition-transform duration-300 hover:-translate-y-1 hover:text-accent"
+              >
+                <i
+                  class="fas fa-chart-line text-accent mr-2 transition-colors duration-300"
+                ></i
+                >Performance
               </li>
-              <li class="flex items-center">
-                <i class="fas fa-paint-brush text-accent mr-2"></i>Design
+              <li
+                class="flex items-center transition-transform duration-300 hover:-translate-y-1 hover:text-accent"
+              >
+                <i
+                  class="fas fa-paint-brush text-accent mr-2 transition-colors duration-300"
+                ></i
+                >Design
               </li>
             </ul>
           </header>
@@ -358,8 +384,9 @@
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <!-- Growth -->
             <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-growth"
+              data-animate="slide-up"
             >
               <div class="flex items-center mb-4">
                 <div
@@ -385,8 +412,9 @@
 
             <!-- Branding -->
             <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-branding"
+              data-animate="slide-up"
             >
               <div class="flex items-center mb-4">
                 <div
@@ -415,8 +443,9 @@
 
             <!-- Performance -->
             <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-performance"
+              data-animate="slide-up"
             >
               <div class="flex items-center mb-4">
                 <div
@@ -444,8 +473,9 @@
 
             <!-- Design & XP -->
             <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6"
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-design"
+              data-animate="slide-up"
             >
               <div class="flex items-center mb-4">
                 <div
