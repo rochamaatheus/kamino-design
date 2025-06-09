@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós • Agência Kamino</title>
+
+    <!-- Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Tailwind + estilos globais do site  -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
+    <header class="bg-white shadow-md sticky top-0 z-40">
+      <nav
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        aria-label="Navegação principal"
+      >
+        <div class="relative flex items-center justify-between h-20">
+          <!-- Logo à esquerda -->
+          <div class="flex-shrink-0">
+            <a
+              href="/"
+              aria-label="Início"
+              class="inline-block opacity-0 animate-slide-up will-change-transform"
+            >
+              <img
+                src="./src/img/logo.png"
+                alt="Logo Agência Kamino"
+                class="w-[200px] transition duration-300 ease-in-out hover:scale-110 hover:brightness-125 will-change-transform origin-center"
+              />
+            </a>
+          </div>
+
+          <!-- Menu centralizado -->
+          <ul
+            class="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8"
+          >
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#servicos"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Serviços
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#diferenciais"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Diferenciais
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#depoimentos"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Depoimentos
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="/quem-somos.html"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Quem Somos
+              </a>
+            </li>
+          </ul>
+
+          <!-- Botão à direita -->
+          <div
+            class="hidden md:block opacity-0 animate-slide-up will-change-transform"
+          >
+            <a href="#contato" class="btn-pulse"> Solicitar Orçamento </a>
+          </div>
+
+          <!-- Botão mobile -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-primary hover:text-secondary focus:outline-none"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main id="main-content">
+      <section
+        id="inicio"
+        class="relative gradient-bg text-white hero-clip pb-20 overflow-hidden"
+        aria-label="Apresentação"
+      >
+        <img
+          src="./src/img/bg.jpeg"
+          alt=""
+          class="absolute left-0 max-w-[800px] opacity-40 w-full z-[-1] pointer-events-none"
+        />
+
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 relative z-[1] flex flex-col md:flex-row items-center justify-center"
+        >
+          <!-- Texto principal -->
+          <div
+            class="md:w-1/2 mb-12 md:mb-0 opacity-0 animate-slide-up will-change-transform text-center"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
+              Nós simplificamos o
+              <span class="text-accent">crescimento digital</span>
+            </h1>
+            <p class="text-xl mb-8 text-blue-100">
+              Somos um time de estrategistas, designers e devs que corta o ruído
+              e entrega resultados concretos — não métricas de vaidade.
+            </p>
+
+            <a
+              href="/#contato"
+              class="inline-flex items-center group bg-primary text-white px-8 py-3 rounded-md font-bold shadow-md transition-all duration-300 hover:bg-secondary hover:-translate-y-1"
+            >
+              Falar com um especialista
+              <i
+                class="fas fa-arrow-right ml-2 relative top-[1px] transition-transform group-hover:translate-x-1"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Missão / Visão / Valores -->
+      <section class="py-20 bg-white" aria-labelledby="titulo-bussola">
+        <header class="text-center mb-16">
+          <h2
+            id="titulo-bussola"
+            class="text-3xl md:text-4xl font-bold text-primary"
+          >
+            Nossa bússola
+          </h2>
+        </header>
+
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          <!-- Card padrão -->
+          <article
+            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
+            aria-labelledby="missao"
+          >
+            <h3 id="missao" class="text-xl font-semibold text-primary mb-3">
+              Missão
+            </h3>
+            <p class="text-gray-700 leading-relaxed text-base">
+              Entregar clareza de marketing e impacto mensurável para líderes
+              ambiciosos que valorizam substância acima de buzz.
+            </p>
+          </article>
+
+          <article
+            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
+            aria-labelledby="visao"
+          >
+            <h3 id="visao" class="text-xl font-semibold text-primary mb-3">
+              Visão
+            </h3>
+            <p class="text-gray-700 leading-relaxed text-base">
+              Redefinir a relação agência-cliente com transparência, foco e
+              retorno tangível sobre o investimento.
+            </p>
+          </article>
+
+          <article
+            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
+            aria-labelledby="valores"
+          >
+            <h3 id="valores" class="text-xl font-semibold text-primary mb-3">
+              Valores
+            </h3>
+            <p class="text-gray-700 leading-relaxed text-base">
+              Curiosidade que vira solução, integridade que constrói confiança e
+              resultados que justificam cada real investido.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Como Trabalhamos -->
+      <section class="bg-light py-12" aria-labelledby="titulo-como-trabalhamos">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header>
+            <h2
+              id="titulo-como-trabalhamos"
+              class="text-3xl md:text-4xl font-bold text-primary mb-12 text-center"
+            >
+              Como pensamos e agimos
+            </h2>
+          </header>
+
+          <ol class="space-y-8 max-w-3xl mx-auto list-decimal list-inside">
+            <li
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out"
+            >
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Pessoas no centro de tudo
+              </h3>
+              <p>
+                Mergulhamos na realidade do seu público — o que emociona,
+                impulsiona e define escolhas. Estratégias feitas por e para
+                humanos.
+              </p>
+            </li>
+
+            <li
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out"
+            >
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Dados que acendem ideias
+              </h3>
+              <p>
+                Usamos dados para revelar caminhos, não impor rotas.
+                Criatividade e feeling estratégico completam o que o analytics
+                mostra.
+              </p>
+            </li>
+
+            <li
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out"
+            >
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Clareza que move resultados
+              </h3>
+              <p>
+                Objetivos claros, métricas transparentes e linguagem sem
+                enrolação. Mostramos evolução com simplicidade e foco no
+                impacto.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section
+        class="gradient-bg py-16 text-center text-white relative"
+        aria-labelledby="titulo-cta-sobre"
+      >
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="titulo-cta-sobre" class="text-3xl md:text-4xl font-bold mb-4">
+            Pronto para um marketing direto ao ponto?
+          </h2>
+          <p class="text-lg md:text-xl text-blue-100 mb-6">
+            Agende uma conversa e descubra como podemos acelerar resultados com
+            clareza e foco.
+          </p>
+          <a
+            href="/#contato"
+            class="inline-flex items-center group bg-primary text-white px-8 py-3 rounded-md font-bold shadow-md transition-all duration-300 hover:bg-secondary hover:-translate-y-1"
+          >
+            Vamos falar dos seus objetivos
+            <i
+              class="fas fa-paper-plane ml-2 relative top-[1px] transition-transform duration-300 group-hover:translate-x-1"
+            ></i>
+          </a>
+        </div>
+        <!-- Ainda DENTRO do section.gradient-bg -->
+        <div class="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="border-t border-gray-700"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="gradient-bg text-white" aria-labelledby="titulo-rodape">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        style="padding-bottom: 3rem"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Coluna 1 -->
+          <div>
+            <h2 id="titulo-rodape" class="text-xl font-bold mb-4">
+              Agência Kamino
+            </h2>
+            <p class="text-gray-300 mb-4">
+              Transformando negócios com marketing digital e tecnologia.
+            </p>
+            <nav aria-label="Redes sociais">
+              <ul class="flex">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61571231623425&locale=pt_BR"
+                    target="_blank"
+                    class="inline-block text-gray-300 pl-2 pr-2 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
+                    aria-label="Facebook"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-block pl-2 pr-2 text-gray-300 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
+                    aria-label="Twitter"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/ag%C3%AAncia-kamino/about/"
+                    target="_blank"
+                    class="inline-block pl-2 pr-2 text-gray-300 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/agenciakamino/?utm_source=ig_web_button_share_sheet"
+                    target="_blank"
+                    class="inline-block pl-2 pr-2 text-gray-300 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
+                    aria-label="Instagram"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Coluna 2 – Serviços -->
+          <nav aria-label="Links de serviços">
+            <h3 class="text-lg font-bold mb-4">Serviços</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-300 pt-4 pb-4 hover:text-white"
+                  >Marketing Digital</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-300 pt-4 pb-4 hover:text-white"
+                  >Tráfego Pago</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-300 pt-4 pb-4 hover:text-white"
+                  >Páginas de Destino</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-300 pt-4 pb-4 hover:text-white"
+                  >Atendente de Inteligência Artificial</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Coluna 3 – Empresa -->
+          <nav aria-label="Links institucionais">
+            <h3 class="text-lg font-bold mb-4">Empresa</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Sobre nós</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Cases</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Carreiras</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Coluna 4 – Newsletter -->
+          <section aria-label="Inscrição na newsletter">
+            <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+            <p class="text-gray-300 mb-4">
+              Receba novidades e insights diretamente no seu e-mail.
+            </p>
+            <form class="flex" aria-label="Formulário de newsletter">
+              <label for="newsletter-email" class="sr-only">Seu e-mail</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                required
+                placeholder="Seu e-mail"
+                class="px-4 py-2 rounded-l-md w-full focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-accent px-4 py-2 rounded-r-md hover:bg-blue-500 transition-colors duration-300"
+                aria-label="Inscrever"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </section>
+        </div>
+
+        <!-- Créditos finais -->
+        <div
+          class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-300 mb-4 md:mb-0">
+            © 2025 Agência Kamino. Todos os direitos reservados.
+          </p>
+          <nav aria-label="Links legais">
+            <ul class="flex space-x-6">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Termos de Serviço</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

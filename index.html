@@ -79,10 +79,10 @@
             </li>
             <li class="opacity-0 animate-slide-up will-change-transform">
               <a
-                href="#contato"
+                href="/quem-somos.html"
                 class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
               >
-                Contato
+                Quem Somos
               </a>
             </li>
           </ul>
@@ -397,62 +397,12 @@
             </div>
           </header>
 
-          <!-- Cards de serviço -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <!-- Estratégia de Crescimento -->
+          <!-- Cards de serviço (versão enxuta – 3 serviços) -->
+          <div class="grid grid-cols-1 gap-8">
+            <!-- Tráfego Pago -->
             <article
               class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
-              aria-labelledby="servico-growth"
-              data-animate="slide-up"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
-                >
-                  <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 id="servico-growth" class="text-xl font-bold text-primary">
-                  Estratégia de Crescimento
-                </h3>
-              </div>
-              <p class="text-gray-600 leading-relaxed">
-                Crescer sem direção é perder tempo e dinheiro. Analisamos dados,
-                descobre onde estão os gargalos e monta um plano claro pra
-                atrair mais clientes do jeito certo.
-              </p>
-            </article>
-
-            <!-- Posicionamento e Marca -->
-            <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
-              aria-labelledby="servico-branding"
-              data-animate="slide-up"
-              data-delay="200"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
-                >
-                  <i class="fas fa-bullseye"></i>
-                </div>
-                <h3
-                  id="servico-branding"
-                  class="text-xl font-bold text-primary"
-                >
-                  Posicionamento e Marca
-                </h3>
-              </div>
-              <p class="text-gray-600 leading-relaxed">
-                Quem não é lembrado, não é escolhido. Criamos mensagens claras e
-                identidades fortes que conectam com o público e posicionam sua
-                marca de forma autêntica.
-              </p>
-            </article>
-
-            <!-- Tráfego e Performance -->
-            <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
-              aria-labelledby="servico-performance"
+              aria-labelledby="servico-trafego"
               data-animate="slide-up"
             >
               <div class="flex items-center mb-4">
@@ -461,40 +411,24 @@
                 >
                   <i class="fas fa-bolt"></i>
                 </div>
-                <h3
-                  id="servico-performance"
-                  class="text-xl font-bold text-primary"
-                >
-                  Tráfego e Performance
+                <h3 id="servico-trafego" class="text-xl font-bold text-primary">
+                  Tráfego Pago
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Aqui, anúncio tem estratégia. Planejamos, testa e otimiza cada
-                campanha pra que cada clique ajude a vender mais — sem achismo.
+                Anúncio sem estratégia é só gasto. Por aqui, a lógica é clara:
+                entender o público, testar hipóteses e otimizar com base em
+                dados — não em achismo.
               </p>
-            </article>
-
-            <!-- Design Estratégico -->
-            <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
-              aria-labelledby="servico-design"
-              data-animate="slide-up"
-              data-delay="200"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
-                >
-                  <i class="fas fa-pencil-ruler"></i>
-                </div>
-                <h3 id="servico-design" class="text-xl font-bold text-primary">
-                  Design Estratégico
-                </h3>
-              </div>
-              <p class="text-gray-600 leading-relaxed">
-                Mais que bonito. Criamos design que guia, converte e marca.
-                Layouts, sites e peças que fazem o público agir — sem confusão.
-              </p>
+              <a
+                href="/trafego-pago"
+                class="mt-2 pt-2 pb-2 inline-flex items-center text-primary font-semibold group"
+              >
+                Saiba mais
+                <i
+                  class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"
+                ></i>
+              </a>
             </article>
 
             <!-- Desenvolvimento Web -->
@@ -502,6 +436,7 @@
               class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-dev"
               data-animate="slide-up"
+              data-delay="150"
             >
               <div class="flex items-center mb-4">
                 <div
@@ -510,21 +445,31 @@
                   <i class="fas fa-code"></i>
                 </div>
                 <h3 id="servico-dev" class="text-xl font-bold text-primary">
-                  Desenvolvimento Web
+                  Desenvolvimento
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Landing pages, sites institucionais ou sistemas completos. A
-                gente desenvolve com performance, segurança e foco em resultado.
+                Não basta funcionar — tem que carregar rápido, ser seguro e
+                fácil de usar. Cada linha de código aqui tem um porquê:
+                facilitar a vida de quem acessa e gerar valor pra quem investe.
               </p>
+              <a
+                href="/desenvolvimento"
+                class="mt-2 pt-2 pb-2 inline-flex items-center text-primary font-semibold group"
+              >
+                Saiba mais
+                <i
+                  class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"
+                ></i>
+              </a>
             </article>
 
-            <!-- Agentes de IA e Automação -->
+            <!-- Agentes de IA -->
             <article
               class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-ia"
               data-animate="slide-up"
-              data-delay="200"
+              data-delay="300"
             >
               <div class="flex items-center mb-4">
                 <div
@@ -533,14 +478,23 @@
                   <i class="fas fa-robot"></i>
                 </div>
                 <h3 id="servico-ia" class="text-xl font-bold text-primary">
-                  Agentes de IA e Automação
+                  Agentes de IA
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Automatize atendimento, relatórios, pré-venda e muito mais.
-                Criamos agentes inteligentes que economizam tempo e melhoram a
-                experiência do seu cliente.
+                Nem toda tarefa precisa de um humano. Automatizar é reduzir
+                erros, economizar tempo e escalar atendimento — sem abrir mão da
+                experiência.
               </p>
+              <a
+                href="/agentes-ia"
+                class="mt-2 pt-2 pb-2 inline-flex items-center text-primary font-semibold group"
+              >
+                Saiba mais
+                <i
+                  class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"
+                ></i>
+              </a>
             </article>
           </div>
         </div>
@@ -845,9 +799,7 @@
                 ></span>
                 <div>
                   <h3 class="font-bold text-primary mb-1">Nosso escritório</h3>
-                  <p class="text-gray-600">
-                    Avenida Central, 1234<br />Joinville, SC
-                  </p>
+                  <p class="text-gray-600">Joinville, SC</p>
                 </div>
               </div>
 
@@ -861,8 +813,10 @@
                 ></span>
                 <div>
                   <h3 class="font-bold text-primary mb-1">E-mail</h3>
-                  <a href="mailto:contato@kamino.com.br" class="text-gray-600"
-                    >contato@kamino.com.br</a
+                  <a
+                    href="mailto:contato@agenciakamino.com.br"
+                    class="text-gray-600"
+                    >contato@agenciakamino.com.br</a
                   >
                 </div>
               </div>
@@ -878,7 +832,7 @@
                 <div>
                   <h3 class="font-bold text-primary mb-1">Telefone</h3>
                   <p class="text-gray-600">
-                    <a href="tel:+5547999999999">+55 (47) 99999-9999</a
+                    <a href="tel:+5547984553370">+55 (47) 98455-3370</a
                     ><br />Seg-Sex, 9 h – 18 h
                   </p>
                 </div>
@@ -952,6 +906,32 @@
                   <option value="chatbot">
                     Atendente de Inteligência Artificial
                   </option>
+                  <option value="todos">Todos</option>
+                  <option value="personalizado">Personalizado</option>
+                </select>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="investimentoForm"
+                  class="block text-gray-700 font-medium mb-2"
+                >
+                  Quanto você investe ou pretende investir em anúncios por mês?
+                </label>
+                <select
+                  id="investimentoForm"
+                  name="investimento"
+                  required
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                >
+                  <option value="">Selecione uma faixa</option>
+                  <option value="1500-3000">
+                    de R$1.500,00 a R$3.000,00 (mínimo)
+                  </option>
+                  <option value="3000-10000">
+                    de R$3.000,01 a R$10.000,00
+                  </option>
+                  <option value="10000+">Acima de R$10.000,00</option>
                 </select>
               </div>
 

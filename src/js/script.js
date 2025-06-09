@@ -118,7 +118,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       e.preventDefault();
 
       const target = document.querySelector(href);
-      const offset = 100; // Ajuste para header fixo
+      const offset = 60; // Ajuste para header fixo
       const y = target.getBoundingClientRect().top + window.scrollY - offset;
 
       smoothScrollTo(y, 600); // ← duração de 600ms
