@@ -16,6 +16,23 @@
   </head>
 
   <body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
+    <!-- Botão flutuante do WhatsApp -->
+    <aside
+      class="fixed bottom-8 right-8 z-50"
+      aria-label="Contato via WhatsApp"
+    >
+      <a
+        href="https://wa.me/5547984553370?text=Ol%C3%A1%20Ag%C3%AAncia%20Kamino%2C%20podemos%20conversar%3F"
+        class="whatsapp-bubble bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-xl hover:bg-[#128C7E] transition-colors duration-300"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir conversa no WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </aside>
+
+    <!-- Cabeçalho e navegação principal -->
     <header class="bg-white shadow-md sticky top-0 z-40">
       <nav
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
@@ -142,7 +159,7 @@
 
       <!-- Missão / Visão / Valores -->
       <section class="py-20 bg-white" aria-labelledby="titulo-bussola">
-        <header class="text-center mb-16">
+        <header class="text-center mb-16 opacity-0" data-animate="slide-down">
           <h2
             id="titulo-bussola"
             class="text-3xl md:text-4xl font-bold text-primary"
@@ -156,8 +173,10 @@
         >
           <!-- Card padrão -->
           <article
-            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
+            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md opacity-0"
             aria-labelledby="missao"
+            data-animate="slide-left"
+            data-delay="100"
           >
             <h3 id="missao" class="text-xl font-semibold text-primary mb-3">
               Missão
@@ -169,8 +188,10 @@
           </article>
 
           <article
-            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
+            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md opacity-0"
             aria-labelledby="visao"
+            data-animate="slide-left"
+            data-delay="300"
           >
             <h3 id="visao" class="text-xl font-semibold text-primary mb-3">
               Visão
@@ -182,8 +203,10 @@
           </article>
 
           <article
-            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
+            class="bg-[#f1f7ff] border border-blue-100 rounded-xl p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md opacity-0"
             aria-labelledby="valores"
+            data-animate="slide-left"
+            data-delay="500"
           >
             <h3 id="valores" class="text-xl font-semibold text-primary mb-3">
               Valores
@@ -199,7 +222,7 @@
       <!-- Como Trabalhamos -->
       <section class="bg-light py-12" aria-labelledby="titulo-como-trabalhamos">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <header>
+          <header class="opacity-0" data-animate="slide-down" data-delay="100">
             <h2
               id="titulo-como-trabalhamos"
               class="text-3xl md:text-4xl font-bold text-primary mb-12 text-center"
@@ -210,7 +233,9 @@
 
           <ol class="space-y-8 max-w-3xl mx-auto list-decimal list-inside">
             <li
-              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out"
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out opacity-0"
+              data-animate="slide-right"
+              data-delay="100"
             >
               <h3 class="text-xl font-bold text-primary mb-2">
                 Pessoas no centro de tudo
@@ -223,7 +248,9 @@
             </li>
 
             <li
-              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out"
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out opacity-0"
+              data-animate="slide-left"
+              data-delay="300"
             >
               <h3 class="text-xl font-bold text-primary mb-2">
                 Dados que acendem ideias
@@ -236,7 +263,9 @@
             </li>
 
             <li
-              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out"
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out opacity-0"
+              data-animate="slide-right"
+              data-delay="500"
             >
               <h3 class="text-xl font-bold text-primary mb-2">
                 Clareza que move resultados
@@ -257,16 +286,26 @@
         aria-labelledby="titulo-cta-sobre"
       >
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 id="titulo-cta-sobre" class="text-3xl md:text-4xl font-bold mb-4">
+          <h2
+            id="titulo-cta-sobre"
+            class="text-3xl md:text-4xl font-bold mb-4 opacity-0"
+            data-animate="slide-down"
+          >
             Pronto para um marketing direto ao ponto?
           </h2>
-          <p class="text-lg md:text-xl text-blue-100 mb-6">
+          <p
+            class="text-lg md:text-xl text-blue-100 mb-6 opacity-0"
+            data-animate="slide-down"
+            data-delay="100"
+          >
             Agende uma conversa e descubra como podemos acelerar resultados com
             clareza e foco.
           </p>
           <a
             href="/#contato"
-            class="inline-flex items-center group bg-primary text-white px-8 py-3 rounded-md font-bold shadow-md transition-all duration-300 hover:bg-secondary hover:-translate-y-1"
+            class="inline-flex items-center group bg-primary text-white px-8 py-3 rounded-md font-bold shadow-md transition-all duration-300 hover:bg-secondary hover:-translate-y-1 opacity-0"
+            data-animate="slide-down"
+            data-delay="200"
           >
             Vamos falar dos seus objetivos
             <i

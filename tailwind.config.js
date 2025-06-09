@@ -16,6 +16,13 @@ export default {
         accent: '#3b82f6',
         light: '#eff6ff',
         dark: '#1e1b4b',
+        'kamino-navy': '#0f172a',
+        'kamino-blue': '#1d4ed8',
+        'kamino-green': '#10b981',
+        'kamino-purple': '#8b5cf6',
+        'kamino-cyan': '#06b6d4',
+        'glass-dark': 'rgba(30, 41, 59, 0.5)',
+        'glass-light': 'rgba(241, 245, 249, 0.1)',
       },
       keyframes: {
         fadeIn: {
