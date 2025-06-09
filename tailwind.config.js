@@ -6,6 +6,7 @@ export default {
     'animate-slide-left',
     'animate-slide-up',
     'animate-slide-down',
+    'animate-zoom-in',
   ],
   theme: {
     extend: {
@@ -37,6 +38,10 @@ export default {
           '0%': { transform: 'translateX(50%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        zoomIn: {
+          '0%': { transform: 'scale(0.95)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
       },
       animation: {
         fade: 'fadeIn 0.8s ease-out forwards',
@@ -44,6 +49,7 @@ export default {
         'slide-up': 'slideUp 0.8s ease-out forwards',
         'slide-left': 'slideLeft 0.8s ease-out forwards',
         'slide-right': 'slideRight 0.8s ease-out forwards',
+        'zoom-in': 'zoomIn 0.6s ease-out forwards',
       },
     },
   },

@@ -17,7 +17,7 @@
       aria-label="Contato via WhatsApp"
     >
       <a
-        href="https://wa.me/5547999131564?text=Ol%C3%A1%20Ag%C3%AAncia%20Kamino%2C%20podemos%20conversar%3F"
+        href="https://wa.me/5547984553370?text=Ol%C3%A1%20Ag%C3%AAncia%20Kamino%2C%20podemos%20conversar%3F"
         class="whatsapp-bubble bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-xl hover:bg-[#128C7E] transition-colors duration-300"
         target="_blank"
         rel="noopener noreferrer"
@@ -37,7 +37,7 @@
           <!-- Logo à esquerda -->
           <div class="flex-shrink-0">
             <a
-              href="#inicio"
+              href="/"
               aria-label="Início"
               class="inline-block opacity-0 animate-slide-up will-change-transform"
             >
@@ -67,14 +67,6 @@
                 class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
               >
                 Diferenciais
-              </a>
-            </li>
-            <li class="opacity-0 animate-slide-up will-change-transform">
-              <a
-                href="#planos"
-                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
-              >
-                Planos
               </a>
             </li>
             <li class="opacity-0 animate-slide-up will-change-transform">
@@ -125,7 +117,7 @@
         aria-label="Apresentação"
       >
         <img
-          src="./src/img/bg.png"
+          src="./src/img/bg.jpeg"
           alt=""
           class="absolute left-0 max-w-[800px] opacity-40 w-full z-[-1] pointer-events-none"
         />
@@ -187,7 +179,7 @@
                 class="relative inline-block font-bold text-lg text-white leading-none"
               >
                 <span
-                  class="absolute left-[-25px] text-[11px] text-white/70 tracking-wide"
+                  class="absolute left-[-30px] text-[11px] text-white/70 tracking-wide"
                 >
                   ROI
                 </span>
@@ -329,60 +321,85 @@
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-start"
         >
           <!-- Intro serviços -->
-          <header data-animate="slide-left" class="opacity-0">
-            <span
-              class="inline-block bg-white text-primary px-3 py-1 rounded-full font-semibold"
-              >O que fazemos</span
-            >
-            <h2
-              id="titulo-servicos"
-              class="text-4xl font-bold text-primary mt-4 mb-6"
-            >
-              Nossos serviços
-            </h2>
-            <a
-              href="#contato"
-              class="inline-block bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-secondary transition-colors duration-300"
-            >
-              Comece um projeto
-            </a>
+          <header
+            data-animate="slide-left"
+            class="opacity-0 h-full flex flex-col justify-between"
+          >
+            <div>
+              <span
+                class="inline-block bg-white text-primary px-3 py-1 rounded-full font-semibold"
+                >O que fazemos</span
+              >
+              <h2
+                id="titulo-servicos"
+                class="text-4xl font-bold text-primary mt-4 mb-4"
+              >
+                Nossos serviços
+              </h2>
 
-            <p class="mt-6 text-gray-600">
-              Acreditamos que cada etapa do marketing digital deve ser
-              integrada: da estratégia à execução, passando por otimização
-              contínua e design centrado no usuário.
-            </p>
-            <ul class="mt-4 flex space-x-6 text-gray-700">
-              <li
-                class="flex items-center transition-transform duration-300 hover:-translate-y-1 hover:text-accent"
+              <p class="text-gray-600 mb-6 max-w-[600px]">
+                Não faz sentido ter uma boa ideia se ela não for bem executada.
+                Nem adianta um visual bonito sem estratégia por trás. A gente
+                cuida de tudo junto: da estratégia ao design funcional, com
+                otimizações constantes que fazem a diferença no resultado final.
+              </p>
+
+              <a
+                href="#contato"
+                class="inline-block bg-primary text-white px-6 py-3 rounded-full font-medium shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:bg-secondary hover:text-white will-change-transform"
               >
-                <i
-                  class="fas fa-lightbulb text-accent mr-2 transition-colors duration-300"
-                ></i
-                >Estratégia
-              </li>
-              <li
-                class="flex items-center transition-transform duration-300 hover:-translate-y-1 hover:text-accent"
-              >
-                <i
-                  class="fas fa-chart-line text-accent mr-2 transition-colors duration-300"
-                ></i
-                >Performance
-              </li>
-              <li
-                class="flex items-center transition-transform duration-300 hover:-translate-y-1 hover:text-accent"
-              >
-                <i
-                  class="fas fa-paint-brush text-accent mr-2 transition-colors duration-300"
-                ></i
-                >Design
-              </li>
-            </ul>
+                Comece um projeto
+              </a>
+
+              <ul class="mt-4 flex space-x-6 text-gray-700">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-3 py-2 rounded-md transition-transform duration-300 hover:-translate-y-1 hover:text-accent will-change-transform"
+                  >
+                    <i
+                      class="fas fa-lightbulb text-accent mr-2 transition-colors duration-300"
+                    ></i>
+                    Estratégia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-3 py-2 rounded-md transition-transform duration-300 hover:-translate-y-1 hover:text-accent will-change-transform"
+                  >
+                    <i
+                      class="fas fa-chart-line text-accent mr-2 transition-colors duration-300"
+                    ></i>
+                    Performance
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-3 py-2 rounded-md transition-transform duration-300 hover:-translate-y-1 hover:text-accent will-change-transform"
+                  >
+                    <i
+                      class="fas fa-paint-brush text-accent mr-2 transition-colors duration-300"
+                    ></i>
+                    Design
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Imagem lateral -->
+            <div class="hidden lg:flex flex-col justify-end h-full mt-12">
+              <img
+                src=""
+                alt="Projetos da Kamino em destaque"
+                class="w-full h-full object-cover animate-fade"
+              />
+            </div>
           </header>
 
           <!-- Cards de serviço -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <!-- Growth -->
+            <!-- Estratégia de Crescimento -->
             <article
               class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-growth"
@@ -395,53 +412,44 @@
                   <i class="fas fa-chart-line"></i>
                 </div>
                 <h3 id="servico-growth" class="text-xl font-bold text-primary">
-                  Growth
+                  Estratégia de Crescimento
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Nosso objetivo é contribuir para o crescimento do seu negócio
-                por meio de decisões baseadas em dados. Analisamos
-                profundamente…
+                Crescer sem direção é perder tempo e dinheiro. A gente analisa
+                dados, descobre onde estão os gargalos e monta um plano claro
+                pra atrair mais clientes do jeito certo.
               </p>
-              <a
-                href="#"
-                class="text-accent font-medium hover:underline mt-4 inline-block"
-                >Ver mais →</a
-              >
             </article>
 
-            <!-- Branding -->
+            <!-- Posicionamento e Marca -->
             <article
               class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-branding"
               data-animate="slide-up"
+              data-delay="200"
             >
               <div class="flex items-center mb-4">
                 <div
                   class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
                 >
-                  <i class="fas fa-search"></i>
+                  <i class="fas fa-bullseye"></i>
                 </div>
                 <h3
                   id="servico-branding"
                   class="text-xl font-bold text-primary"
                 >
-                  Branding
+                  Posicionamento e Marca
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Mais do que marcas, criamos histórias que se conectam de forma
-                verdadeira com seu público, refletindo a essência do seu
-                negócio.
+                Quem não é lembrado, não é escolhido. Criamos mensagens claras e
+                identidades fortes que conectam com o público e posicionam sua
+                marca de forma autêntica.
               </p>
-              <a
-                href="#"
-                class="text-accent font-medium hover:underline mt-4 inline-block"
-                >Ver mais →</a
-              >
             </article>
 
-            <!-- Performance -->
+            <!-- Tráfego e Performance -->
             <article
               class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-performance"
@@ -451,31 +459,28 @@
                 <div
                   class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
                 >
-                  <i class="fas fa-tachometer-alt"></i>
+                  <i class="fas fa-bolt"></i>
                 </div>
                 <h3
                   id="servico-performance"
                   class="text-xl font-bold text-primary"
                 >
-                  Performance
+                  Tráfego e Performance
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Cada ação é cuidadosamente planejada para gerar resultados reais
-                e sustentáveis. Com uma abordagem data-driven, garantimos…
+                Aqui, anúncio tem estratégia. A gente planeja, testa e otimiza
+                cada campanha pra que cada clique ajude a vender mais — sem
+                achismo.
               </p>
-              <a
-                href="#"
-                class="text-accent font-medium hover:underline mt-4 inline-block"
-                >Ver mais →</a
-              >
             </article>
 
-            <!-- Design & XP -->
+            <!-- Design Estratégico -->
             <article
               class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
               aria-labelledby="servico-design"
               data-animate="slide-up"
+              data-delay="200"
             >
               <div class="flex items-center mb-4">
                 <div
@@ -484,19 +489,59 @@
                   <i class="fas fa-pencil-ruler"></i>
                 </div>
                 <h3 id="servico-design" class="text-xl font-bold text-primary">
-                  Design e Experiência
+                  Design Estratégico
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Soluções completas para todos os pontos de contato com sua
-                marca, garantindo uma experiência fluida e impactante para os
-                usuários.
+                Mais que bonito. A gente cria design que guia, converte e marca.
+                Layouts, sites e peças que fazem o público agir — sem confusão.
               </p>
-              <a
-                href="#"
-                class="text-accent font-medium hover:underline mt-4 inline-block"
-                >Ver mais →</a
-              >
+            </article>
+
+            <!-- Desenvolvimento Web -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
+              aria-labelledby="servico-dev"
+              data-animate="slide-up"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3 id="servico-dev" class="text-xl font-bold text-primary">
+                  Desenvolvimento Web
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Landing pages, sites institucionais ou sistemas completos. A
+                gente desenvolve com performance, segurança e foco em resultado.
+              </p>
+            </article>
+
+            <!-- Agentes de IA e Automação -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover p-6 opacity-0"
+              aria-labelledby="servico-ia"
+              data-animate="slide-up"
+              data-delay="200"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3 id="servico-ia" class="text-xl font-bold text-primary">
+                  Agentes de IA e Automação
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Automatize atendimento, relatórios, pré-venda e muito mais.
+                Criamos agentes inteligentes que economizam tempo e melhoram a
+                experiência do seu cliente.
+              </p>
             </article>
           </div>
         </div>
@@ -509,7 +554,7 @@
         aria-labelledby="titulo-diferenciais"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <header class="text-center mb-16">
+          <header class="text-center mb-16 opacity-0" data-animate="fade-up">
             <h2
               id="titulo-diferenciais"
               class="text-3xl font-bold text-primary mb-4"
@@ -524,10 +569,14 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <!-- Lista de diferenciais -->
             <ul class="space-y-8" aria-label="Lista de diferenciais">
-              <li class="flex items-start">
-                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
-                  ><i class="fas fa-bolt text-xl" aria-hidden="true"></i
-                ></span>
+              <li
+                class="flex items-start opacity-0"
+                data-animate="slide-left"
+                data-delay="0"
+              >
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4">
+                  <i class="fas fa-bolt text-xl" aria-hidden="true"></i>
+                </span>
                 <div>
                   <h3 class="text-xl font-bold text-primary mb-2">
                     Implementação Rápida
@@ -538,10 +587,14 @@
                 </div>
               </li>
 
-              <li class="flex items-start">
-                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
-                  ><i class="fas fa-chart-bar text-xl" aria-hidden="true"></i
-                ></span>
+              <li
+                class="flex items-start opacity-0"
+                data-animate="slide-left"
+                data-delay="100"
+              >
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4">
+                  <i class="fas fa-chart-bar text-xl" aria-hidden="true"></i>
+                </span>
                 <div>
                   <h3 class="text-xl font-bold text-primary mb-2">
                     Estratégias Baseadas em Dados
@@ -552,10 +605,14 @@
                 </div>
               </li>
 
-              <li class="flex items-start">
-                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
-                  ><i class="fas fa-headset text-xl" aria-hidden="true"></i
-                ></span>
+              <li
+                class="flex items-start opacity-0"
+                data-animate="slide-left"
+                data-delay="200"
+              >
+                <span class="bg-primary/10 text-primary p-3 rounded-full mr-4">
+                  <i class="fas fa-headset text-xl" aria-hidden="true"></i>
+                </span>
                 <div>
                   <h3 class="text-xl font-bold text-primary mb-2">
                     Suporte Dedicado
@@ -569,7 +626,7 @@
             </ul>
 
             <!-- Imagem -->
-            <figure class="relative">
+            <figure class="relative opacity-0" data-animate="zoom-in">
               <img
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                 alt="Dashboard de resultados em um notebook"
@@ -577,7 +634,9 @@
               />
 
               <figcaption
-                class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 text-center"
+                class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 text-center opacity-0"
+                data-animate="slide-up"
+                data-delay="500"
               >
                 <span class="text-3xl font-bold text-primary block">87%</span>
                 <span class="text-gray-600">Retenção média de clientes</span>
@@ -587,188 +646,15 @@
         </div>
       </section>
 
-      <!-- Planos -->
-      <section
-        id="planos"
-        class="py-20 bg-light"
-        aria-labelledby="titulo-planos"
-      >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <header class="text-center mb-16">
-            <h2 id="titulo-planos" class="text-3xl font-bold text-primary mb-4">
-              Planos Transparentes
-            </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-              Escolha o plano ideal para o seu negócio
-            </p>
-          </header>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8" role="list">
-            <!-- Plano Básico -->
-            <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover"
-              aria-labelledby="plano-basico"
-            >
-              <header class="p-8 border-b border-gray-200">
-                <h3
-                  id="plano-basico"
-                  class="text-xl font-bold text-primary mb-2"
-                >
-                  Básico
-                </h3>
-                <p class="text-gray-600 mb-6">
-                  Perfeito para quem está começando
-                </p>
-                <p class="mb-6">
-                  <span class="text-4xl font-bold text-primary">R$ 499</span
-                  ><span class="text-gray-600"> por mês</span>
-                </p>
-                <a
-                  href="#contato"
-                  class="block bg-primary text-white text-center py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
-                >
-                  Assinar
-                </a>
-              </header>
-              <ul class="p-8 space-y-4">
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Setup
-                  inicial
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Gestão de
-                  campanhas básicas
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Relatório
-                  mensal
-                </li>
-                <li class="flex items-center text-gray-400">
-                  <i class="fas fa-times-circle mr-2"></i>Suporte dedicado
-                </li>
-              </ul>
-            </article>
-
-            <!-- Plano Crescimento -->
-            <article
-              class="relative bg-white rounded-xl shadow-lg overflow-hidden card-hover transform scale-105"
-              aria-labelledby="plano-crescimento"
-            >
-              <div
-                class="absolute top-0 right-0 bg-accent text-white px-4 py-1 text-sm font-bold rounded-bl-lg"
-              >
-                Mais popular
-              </div>
-              <header class="p-8 border-b border-gray-200">
-                <h3
-                  id="plano-crescimento"
-                  class="text-xl font-bold text-primary mb-2"
-                >
-                  Crescimento
-                </h3>
-                <p class="text-gray-600 mb-6">
-                  Ideal para expandir suas vendas
-                </p>
-                <p class="mb-6">
-                  <span class="text-4xl font-bold text-primary">R$ 1.299</span
-                  ><span class="text-gray-600"> por mês</span>
-                </p>
-                <a
-                  href="#contato"
-                  class="block bg-primary text-white text-center py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
-                >
-                  Assinar
-                </a>
-              </header>
-              <ul class="p-8 space-y-4">
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Anúncios
-                  avançados
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Otimização
-                  contínua
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Relatórios
-                  semanais
-                </li>
-                <li class="flex items-center text-gray-400">
-                  <i class="fas fa-times-circle mr-2"></i>Criação de páginas de
-                  destino
-                </li>
-              </ul>
-            </article>
-
-            <!-- Plano Corporativo -->
-            <article
-              class="bg-white rounded-xl shadow-md overflow-hidden card-hover"
-              aria-labelledby="plano-corporativo"
-            >
-              <header class="p-8 border-b border-gray-200">
-                <h3
-                  id="plano-corporativo"
-                  class="text-xl font-bold text-primary mb-2"
-                >
-                  Corporativo
-                </h3>
-                <p class="text-gray-600 mb-6">
-                  Para empresas com necessidades avançadas
-                </p>
-                <p class="mb-6">
-                  <span class="text-4xl font-bold text-primary">R$ 2.999</span
-                  ><span class="text-gray-600"> por mês</span>
-                </p>
-                <a
-                  href="#contato"
-                  class="block bg-primary text-white text-center py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
-                >
-                  Assinar
-                </a>
-              </header>
-              <ul class="p-8 space-y-4">
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i
-                  >Consultoria personalizada
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Gestão
-                  completa de tráfego
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Criação de
-                  páginas de destino
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="fas fa-check-circle text-accent mr-2"></i>Atendente
-                  de Inteligência Artificial
-                </li>
-              </ul>
-            </article>
-          </div>
-
-          <p class="mt-12 text-center text-gray-600">
-            Precisa de algo personalizado? Nós ajudamos você.
-          </p>
-          <div class="text-center">
-            <a
-              href="#contato"
-              class="inline-block border-2 border-primary text-primary px-6 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition-colors duration-300"
-            >
-              Peça um Orçamento
-            </a>
-          </div>
-        </div>
-      </section>
-
       <!-- Depoimentos -->
       <section
         id="depoimentos"
-        class="py-20 bg-white"
+        class="py-20 bg-light"
         aria-labelledby="titulo-depoimentos"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <header class="text-center mb-16">
+          <!-- Título -->
+          <header class="text-center mb-16 opacity-0" data-animate="slide-up">
             <h2
               id="titulo-depoimentos"
               class="text-3xl font-bold text-primary mb-4"
@@ -780,11 +666,14 @@
             </p>
           </header>
 
+          <!-- Cards -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-            <!-- Card depoimento 1 -->
+            <!-- Card 1 -->
             <article
-              class="bg-light p-8 rounded-xl flex flex-col justify-between"
+              class="bg-white p-8 rounded-xl flex flex-col justify-between opacity-0"
               aria-label="Depoimento de Sarah Oliveira"
+              data-animate="slide-up"
+              data-delay="0"
             >
               <header>
                 <div class="text-yellow-400 text-xl mb-6" aria-hidden="true">
@@ -812,10 +701,12 @@
               </footer>
             </article>
 
-            <!-- Card depoimento 2 -->
+            <!-- Card 2 -->
             <article
-              class="bg-light p-8 rounded-xl flex flex-col justify-between"
+              class="bg-white p-8 rounded-xl flex flex-col justify-between opacity-0"
               aria-label="Depoimento de Carlos Santos"
+              data-animate="slide-up"
+              data-delay="100"
             >
               <header>
                 <div class="text-yellow-400 text-xl mb-6" aria-hidden="true">
@@ -843,10 +734,12 @@
               </footer>
             </article>
 
-            <!-- Card depoimento 3 -->
+            <!-- Card 3 -->
             <article
-              class="bg-light p-8 rounded-xl flex flex-col justify-between"
+              class="bg-white p-8 rounded-xl flex flex-col justify-between opacity-0"
               aria-label="Depoimento de Mariana Lima"
+              data-animate="slide-up"
+              data-delay="200"
             >
               <header>
                 <div class="text-yellow-400 text-xl mb-6" aria-hidden="true">
@@ -882,26 +775,37 @@
         aria-labelledby="titulo-cta"
       >
         <img
-          src="./src/img/bg.png"
+          src="./src/img/bg.jpeg"
           alt=""
           class="absolute top-[-50px] left-0 max-w-[450px] opacity-40 w-full z-[1] pointer-events-none"
         />
         <div
           class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-[1]"
         >
-          <h2 id="titulo-cta" class="text-3xl md:text-4xl font-bold mb-6">
+          <h2
+            id="titulo-cta"
+            class="text-3xl md:text-4xl font-bold mb-6 opacity-0"
+            data-animate="slide-up"
+            data-delay="0"
+          >
             Pronto para transformar seu negócio?
           </h2>
-          <p class="text-xl text-blue-100 mb-8">
+          <p
+            class="text-xl text-blue-100 mb-8 opacity-0"
+            data-animate="slide-up"
+            data-delay="150"
+          >
             Agende uma consultoria gratuita de trinta minutos com nossos
             especialistas.
           </p>
-          <a
-            href="#contato"
-            class="bg-white text-primary px-8 py-3 rounded-md font-bold hover:bg-blue-50 transition-colors duration-300 inline-block"
-          >
-            Agendar Consultoria
-          </a>
+          <div data-animate="slide-up" data-delay="300" class="opacity-0">
+            <a
+              href="#contato"
+              class="inline-block bg-white text-primary px-8 py-3 rounded-md font-bold shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:bg-secondary hover:text-white will-change-transform"
+            >
+              Agendar Consultoria
+            </a>
+          </div>
         </div>
       </section>
 
@@ -912,22 +816,31 @@
         aria-labelledby="titulo-contato"
       >
         <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12"
         >
           <!-- Bloco informações -->
           <header>
             <h2
               id="titulo-contato"
-              class="text-3xl font-bold text-primary mb-4"
+              class="text-3xl font-bold text-primary mb-4 opacity-0"
+              data-animate="slide-up"
             >
               Fale conosco
             </h2>
-            <p class="text-gray-600 mb-8">
+            <p
+              class="text-gray-600 mb-8 opacity-0"
+              data-animate="slide-up"
+              data-delay="100"
+            >
               Preencha o formulário e retornaremos em até vinte e quatro horas.
             </p>
 
             <address class="not-italic space-y-6">
-              <div class="flex items-start">
+              <div
+                class="flex items-start opacity-0"
+                data-animate="slide-up"
+                data-delay="300"
+              >
                 <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
                   ><i class="fas fa-map-marker-alt"></i
                 ></span>
@@ -939,7 +852,11 @@
                 </div>
               </div>
 
-              <div class="flex items-start">
+              <div
+                class="flex items-start opacity-0"
+                data-animate="slide-up"
+                data-delay="400"
+              >
                 <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
                   ><i class="fas fa-envelope"></i
                 ></span>
@@ -951,7 +868,11 @@
                 </div>
               </div>
 
-              <div class="flex items-start">
+              <div
+                class="flex items-start opacity-0"
+                data-animate="slide-up"
+                data-delay="500"
+              >
                 <span class="bg-primary/10 text-primary p-3 rounded-full mr-4"
                   ><i class="fas fa-phone-alt"></i
                 ></span>
@@ -967,7 +888,10 @@
           </header>
 
           <!-- Formulário -->
-          <div class="bg-light p-8 rounded-xl shadow-md">
+          <div
+            class="bg-light p-8 rounded-xl shadow-md opacity-0"
+            data-animate="zoom-in"
+          >
             <form id="contatoForm" aria-label="Formulário de contato">
               <div class="mb-6">
                 <label for="nome" class="block text-gray-700 font-medium mb-2"
@@ -1048,7 +972,7 @@
 
               <button
                 type="submit"
-                class="w-full bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-secondary transition-colors duration-300"
+                class="w-full bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-secondary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-in-out will-change-transform"
               >
                 Enviar mensagem
               </button>
@@ -1063,7 +987,10 @@
       class="gradient-bg text-white py-12"
       aria-labelledby="titulo-rodape"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 opacity-0"
+        data-animate="slide-up"
+      >
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Coluna 1 -->
           <div>
@@ -1078,34 +1005,38 @@
                 <li>
                   <a
                     href="#"
-                    class="text-gray-300 hover:text-white"
+                    class="inline-block text-gray-300 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
                     aria-label="Facebook"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-300 hover:text-white"
+                    class="inline-block text-gray-300 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
                     aria-label="Twitter"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-300 hover:text-white"
+                    class="inline-block text-gray-300 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
                     aria-label="LinkedIn"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-300 hover:text-white"
+                    class="inline-block text-gray-300 hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-1 will-change-transform"
                     aria-label="Instagram"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -1211,50 +1142,6 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-      /* Menu mobile */
-      const btnMenu = document.getElementById('mobile-menu-button');
-      const menuMobile = document.getElementById('mobile-menu');
-      btnMenu.addEventListener('click', () => {
-        menuMobile.classList.toggle('hidden');
-        btnMenu.setAttribute(
-          'aria-expanded',
-          !menuMobile.classList.contains('hidden'),
-        );
-      });
-
-      /* Scroll suave */
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          const destino = document.querySelector(this.getAttribute('href'));
-          if (destino) {
-            e.preventDefault();
-            destino.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            if (!menuMobile.classList.contains('hidden')) {
-              menuMobile.classList.add('hidden');
-              btnMenu.setAttribute('aria-expanded', 'false');
-            }
-          }
-        });
-      });
-
-      /* Formulário de contato (mock) */
-      const formContato = document.getElementById('contatoForm');
-      formContato.addEventListener('submit', e => {
-        e.preventDefault();
-        const dados = {
-          nome: formContato.nome.value,
-          email: formContato.email.value,
-          telefone: formContato.telefone.value,
-          servico: formContato.servico.value,
-          mensagem: formContato.mensagem.value,
-        };
-        console.log(dados);
-        alert('Mensagem enviada! Retornaremos em até 24 horas.');
-        formContato.reset();
-      });
-    </script>
     <script src="./src/js/script.js"></script>
   </body>
 </html>
