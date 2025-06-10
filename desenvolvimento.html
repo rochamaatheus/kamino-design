@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website & Landing Pages | Agência Kamino</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0ea5e9',
+              secondary: '#8b5cf6',
+              dark: '#0f172a',
+              light: '#f1f5f9',
+              accent: '#ec4899',
+            },
+            animation: {
+              pulse: 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'slide-up': 'slideUp 0.8s ease-out',
+            },
+            keyframes: {
+              slideUp: {
+                '0%': { transform: 'translateY(30px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        .animate-slide-up,
+        .btn-pulse {
+          animation: none !important;
+        }
+      }
+
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #0ea5e9 0%,
+          #8b5cf6 50%,
+          #ec4899 100%
+        );
+      }
+
+      .hero-clip {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      }
+
+      .btn-pulse:hover {
+        animation: pulse 2s infinite;
+      }
+
+      .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      .timeline {
+        position: relative;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        background: linear-gradient(to bottom, #0ea5e9, #ec4899);
+        transform: translateX(-50%);
+      }
+
+      @media (max-width: 768px) {
+        .timeline::before {
+          left: 32px;
+        }
+        .hero-clip {
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+      }
+
+      /* FAQ Collapse */
+      .faq-item {
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .faq-question {
+        cursor: pointer;
+        position: relative;
+        padding-right: 40px;
+      }
+
+      .faq-question::after {
+        content: '+';
+        position: absolute;
+        right: 0;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      input:checked ~ .faq-question::after {
+        transform: rotate(45deg);
+      }
+
+      input:checked ~ .faq-answer {
+        max-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Hero Section -->
+      <section class="gradient-bg hero-clip pt-20 pb-32 text-white">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate-slide-up" style="animation-delay: 0.1s">
+              <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+              >
+                Websites & LPs That Load Fast and Sell Faster
+              </h1>
+              <p class="mt-6 text-xl opacity-90 max-w-lg">
+                Core Web Vitals 90+, SEO-optimized architecture, and
+                conversion-focused designs
+              </p>
+              <div class="flex flex-wrap gap-4 mt-8">
+                <a
+                  href="#contato"
+                  class="btn-pulse bg-white text-dark font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition"
+                >
+                  Request Quote
+                </a>
+                <a
+                  href="/cases"
+                  class="border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition"
+                >
+                  See Portfolio
+                </a>
+              </div>
+            </div>
+            <div class="animate-slide-up" style="animation-delay: 0.2s">
+              <div
+                class="bg-white/10 backdrop-blur-lg p-1.5 rounded-xl border border-white/20"
+              >
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                  <div class="p-3 bg-gray-800 flex gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div class="p-4 grid gap-4">
+                    <div
+                      class="h-2.5 bg-dark/20 rounded-full w-full animate-pulse"
+                    ></div>
+                    <div
+                      class="h-2.5 bg-dark/20 rounded-full w-3/4 animate-pulse"
+                    ></div>
+                    <div
+                      class="h-2.5 bg-dark/20 rounded-full w-1/2 animate-pulse"
+                    ></div>
+                  </div>
+                  <div
+                    class="h-48 md:h-64 relative bg-gradient-to-br from-cyan-500 to-purple-600"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="bg-white py-24">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center text-dark mb-16"
+          >
+            Why Our Builds Convert
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="card-hover bg-light p-8 rounded-2xl shadow-xl">
+              <div
+                class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-bolt text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-4">Lightning Speed</h3>
+              <p class="text-dark/70">
+                90+ Core Web Vitals, 95+ PageSpeed Insights. Your users won't
+                wait for slow sites.
+              </p>
+            </div>
+
+            <div class="card-hover bg-light p-8 rounded-2xl shadow-xl">
+              <div
+                class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-shield-alt text-2xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-4">
+                Fortress Security
+              </h3>
+              <p class="text-dark/70">
+                Zero-day vulnerability protection, automated backups, and SSL
+                encryption.
+              </p>
+            </div>
+
+            <div class="card-hover bg-light p-8 rounded-2xl shadow-xl">
+              <div
+                class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-chart-line text-2xl text-accent"></i>
+              </div>
+              <h3 class="text-xl font-bold text-dark mb-4">
+                Conversion Engineering
+              </h3>
+              <p class="text-dark/70">
+                Design-driven by behavioral psychology and persuasion
+                principles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="bg-light py-20">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-semibold text-dark mb-8">
+              Modern Development Ecosystem
+            </h3>
+
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 mb-10">
+              <div class="flex items-center gap-3">
+                <div class="bg-white rounded-lg p-3 shadow-md">
+                  <div
+                    class="bg-dark w-10 h-10 rounded font-bold text-white flex items-center justify-center"
+                  >
+                    N
+                  </div>
+                </div>
+                <span class="font-bold">Next.js</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-cyan-500 w-10 h-10 rounded-full flex items-center justify-center"
+                >
+                  <i class="fab fa-css3-alt text-white text-xl"></i>
+                </div>
+                <span class="font-bold">Tailwind CSS</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="bg-dark rounded-lg p-2">
+                  <div class="bg-white text-xs font-bold px-1 py-0.5">JAM</div>
+                </div>
+                <span class="font-bold">Jamstack</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="bg-black rounded-lg p-2">
+                  <div class="text-white font-bold">▲</div>
+                </div>
+                <span class="font-bold">Vercel</span>
+              </div>
+            </div>
+
+            <p class="text-dark/80 max-w-2xl mx-auto">
+              Jamstack architecture, SSR/ISR, automated CI/CD pipelines, and
+              serverless functions
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="bg-white py-24">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center text-dark mb-16"
+          >
+            Streamlined Development Process
+          </h2>
+
+          <div class="timeline max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 relative">
+              <!-- Discovery -->
+              <div
+                class="md:pr-16 animate-slide-up"
+                style="animation-delay: 0.1s"
+              >
+                <div class="bg-light rounded-2xl p-8 shadow-md">
+                  <div class="text-primary text-5xl font-bold mb-4">01</div>
+                  <h3 class="text-xl font-bold text-dark mb-3">Discovery</h3>
+                  <p class="text-dark/70">
+                    Audit & strategy session to align goals, KPIs, and technical
+                    requirements.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Prototype -->
+              <div
+                class="md:pl-16 mt-24 md:mt-0 md:col-start-2 animate-slide-up"
+                style="animation-delay: 0.2s"
+              >
+                <div class="bg-light rounded-2xl p-8 shadow-md">
+                  <div class="text-secondary text-5xl font-bold mb-4">02</div>
+                  <h3 class="text-xl font-bold text-dark mb-3">Prototype</h3>
+                  <p class="text-dark/70">
+                    Interactive mockups and user journey validation before
+                    coding.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Build -->
+              <div
+                class="md:pr-16 mt-24 animate-slide-up"
+                style="animation-delay: 0.3s"
+              >
+                <div class="bg-light rounded-2xl p-8 shadow-md">
+                  <div class="text-accent text-5xl font-bold mb-4">03</div>
+                  <h3 class="text-xl font-bold text-dark mb-3">Build</h3>
+                  <p class="text-dark/70">
+                    Modular development with bi-weekly checkins and staging
+                    access.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Launch -->
+              <div
+                class="md:pl-16 mt-24 md:col-start-2 animate-slide-up"
+                style="animation-delay: 0.4s"
+              >
+                <div class="bg-light rounded-2xl p-8 shadow-md">
+                  <div class="text-primary text-5xl font-bold mb-4">04</div>
+                  <h3 class="text-xl font-bold text-dark mb-3">
+                    Launch & Iterate
+                  </h3>
+                  <p class="text-dark/70">
+                    Performance monitoring and data-driven refinement
+                    post-launch.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Study Section -->
+      <section class="bg-gradient-to-br from-cyan-50 to-purple-50 py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-5xl mx-auto">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-center text-dark mb-16"
+            >
+              Real Results, Quantified
+            </h2>
+            <div class="bg-white rounded-3xl overflow-hidden shadow-2xl">
+              <div class="grid md:grid-cols-2">
+                <div class="p-10">
+                  <div
+                    class="inline-block bg-primary/10 text-primary font-bold px-4 py-1 rounded-full mb-6"
+                  >
+                    SaaS Industry
+                  </div>
+                  <h3 class="text-2xl font-bold text-dark mb-4">
+                    Global ERP Platform Dashboard
+                  </h3>
+                  <p class="text-dark/80 mb-6">
+                    Complex data visualization rebuilt with React Tree Shaking
+                    and optimized state management
+                  </p>
+                  <div class="flex flex-wrap gap-4">
+                    <div
+                      class="bg-emerald-100 text-emerald-800 font-bold px-4 py-2 rounded-full flex items-center"
+                    >
+                      <span class="mr-2">↑</span>64% Conversion Rate
+                    </div>
+                    <div
+                      class="bg-cyan-100 text-cyan-800 font-bold px-4 py-2 rounded-full"
+                    >
+                      0.3s FCP
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-br from-cyan-500 to-blue-700 min-h-80 flex items-center justify-center p-10"
+                >
+                  <div
+                    class="bg-white/20 backdrop-blur border border-white/30 w-full h-64 rounded-xl shadow-xl"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="py-24 bg-dark">
+        <div class="container mx-auto px-4 max-w-3xl">
+          <blockquote class="text-white text-center">
+            <div class="text-5xl mb-6">"</div>
+            <p class="text-xl leading-relaxed mb-8">
+              Kamino transformed our conversion funnel with intelligent
+              component chunking and dynamic imports. Our 38% slower competitors
+              don't understand why our analytics dashboard loads instantly on
+              any device.
+            </p>
+            <footer class="font-bold">
+              — <span class="text-primary">Miguel Santos</span>, CTO @
+              TechFusion Inc
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="bg-white py-24">
+        <div class="container mx-auto px-4 max-w-3xl">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center text-dark mb-16"
+          >
+            Technical FAQs
+          </h2>
+
+          <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <input type="checkbox" id="faq1" class="hidden peer" />
+              <label
+                for="faq1"
+                class="faq-question text-lg font-bold text-dark py-6 block"
+              >
+                How do you ensure 90+ Core Web Vitals scores?
+              </label>
+              <div class="faq-answer peer-checked:max-h-96 pb-6">
+                <p class="text-dark/80">
+                  We implement a comprehensive performance strategy including:
+                  static generation when possible, optimized image delivery with
+                  next-gen formats, critical CSS injection, intelligent
+                  component chunking, and CDN caching strategies. Every project
+                  starts with performance budgeting.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <input type="checkbox" id="faq2" class="hidden peer" />
+              <label
+                for="faq2"
+                class="faq-question text-lg font-bold text-dark py-6 block"
+              >
+                Do your websites integrate with our existing tech stack?
+              </label>
+              <div class="faq-answer peer-checked:max-h-96 pb-6">
+                <p class="text-dark/80">
+                  Absolutely. We specialize in seamless API integrations with
+                  popular CMS platforms (Sanity, Contentful, Strapi), CRM
+                  systems (HubSpot, Salesforce), marketing automation tools, and
+                  database solutions. All implementations follow security best
+                  practices and OAuth protocols.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <input type="checkbox" id="faq3" class="hidden peer" />
+              <label
+                for="faq3"
+                class="faq-question text-lg font-bold text-dark py-6 block"
+              >
+                What about ongoing maintenance and security?
+              </label>
+              <div class="faq-answer peer-checked:max-h-96 pb-6">
+                <p class="text-dark/80">
+                  Our sites include automated dependency monitoring, CI/CD
+                  pipelines with vulnerability scanning, incremental static
+                  regeneration for content updates, and optional maintenance
+                  packages that include monthly audits, performance reports, and
+                  security patching.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="gradient-bg py-20">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Outperform the Competition?
+          </h2>
+          <p class="text-white/90 max-w-xl mx-auto text-lg mb-10">
+            Let's engineer a high-conversion digital experience with technically
+            superior foundations
+          </p>
+          <a
+            href="#contato"
+            class="btn-pulse inline-block bg-white text-dark font-bold px-10 py-5 rounded-full shadow-lg hover:shadow-xl transition text-lg"
+          >
+            Start Your Project
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
