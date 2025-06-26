@@ -50,9 +50,7 @@
           </div>
 
           <!-- Menu centralizado -->
-          <ul
-            class="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8"
-          >
+          <ul id="menu-header">
             <li class="opacity-0 animate-slide-up will-change-transform">
               <a
                 href="#servicos"
@@ -89,7 +87,8 @@
 
           <!-- Botão à direita -->
           <div
-            class="hidden md:block opacity-0 animate-slide-up will-change-transform"
+            id="botao-orcar"
+            class="opacity-0 animate-slide-up will-change-transform"
           >
             <a href="#contato" class="btn-pulse"> Solicitar Orçamento </a>
           </div>
@@ -97,7 +96,7 @@
           <!-- Botão mobile -->
           <button
             id="mobile-menu-button"
-            class="md:hidden text-primary hover:text-secondary focus:outline-none"
+            class="text-primary hover:text-secondary focus:outline-none"
             aria-controls="mobile-menu"
             aria-expanded="false"
             aria-label="Abrir menu"
@@ -106,6 +105,23 @@
           </button>
         </div>
       </nav>
+      <div id="mobile-menu" class="mobile-menu bg-white shadow-lg">
+        <div class="relative px-6">
+          <div class="pb-4">
+            <a href="#servicos" class="mobile-nav-link">Serviços</a>
+            <a href="#diferenciais" class="mobile-nav-link">Diferenciais</a>
+            <a href="#depoimentos" class="mobile-nav-link">Depoimentos</a>
+            <a href="/quem-somos.html" class="mobile-nav-link">Quem Somos</a>
+            <a
+              href="#contato"
+              class="mobile-nav-link mt-4 bg-blue-500 rounded-lg text-center py-3 font-semibold hover:bg-blue-600"
+              style="color: white"
+            >
+              Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Conteúdo principal -->
@@ -246,7 +262,7 @@
               <img
                 src="./src/img/destaque.png"
                 alt="destaque"
-                class="w-[80px] h-auto mt-12 ml-14 animate-bounce inline-block"
+                class="w-[80px] h-auto mt-12 ml-6 animate-bounce inline-block"
               />
             </div>
           </div>
@@ -388,11 +404,14 @@
               </ul>
             </div>
             <!-- Imagem lateral -->
-            <div class="hidden lg:flex flex-col justify-end h-full mt-12">
+            <div
+              class="hidden lg:flex flex-col justify-end h-full mt-12 opacity-0"
+              data-animate="slide-left"
+            >
               <img
-                src=""
-                alt="Projetos da Kamino em destaque"
-                class="w-full h-full object-cover animate-fade"
+                src="./src/img/servicos.jpeg"
+                alt="Serviços"
+                class="w-full h-auto rounded-xl object-cover"
               />
             </div>
           </header>
@@ -412,7 +431,7 @@
                   <i class="fas fa-bolt"></i>
                 </div>
                 <h3 id="servico-trafego" class="text-xl font-bold text-primary">
-                  Tráfego Pago
+                  Anúncios
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
@@ -421,7 +440,7 @@
                 dados — não em achismo.
               </p>
               <a
-                href="/trafego-pago.html"
+                href="/anuncios.html"
                 class="mt-2 pt-2 pb-2 inline-flex items-center text-primary font-semibold group"
               >
                 Saiba mais
@@ -454,7 +473,7 @@
                 facilitar a vida de quem acessa e gerar valor pra quem investe.
               </p>
               <a
-                href="/desenvolvimento"
+                href="/desenvolvimento.html"
                 class="mt-2 pt-2 pb-2 inline-flex items-center text-primary font-semibold group"
               >
                 Saiba mais
@@ -589,7 +608,7 @@
               <figcaption
                 class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 text-center opacity-0"
                 data-animate="slide-up"
-                data-delay="500"
+                data-delay="400"
               >
                 <span class="text-3xl font-bold text-primary block">87%</span>
                 <span class="text-gray-600">Retenção média de clientes</span>
@@ -1027,30 +1046,23 @@
             <ul class="space-y-2">
               <li>
                 <a
-                  href="#servicos"
+                  href="/anuncios.html"
                   class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Marketing Digital</a
+                  >Anúncios</a
                 >
               </li>
               <li>
                 <a
-                  href="#servicos"
+                  href="/desenvolvimento.html"
                   class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Tráfego Pago</a
+                  >Desenvolvimento</a
                 >
               </li>
               <li>
                 <a
-                  href="#servicos"
+                  href="/agente-ia.html"
                   class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Páginas de Destino</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#servicos"
-                  class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Atendente de Inteligência Artificial</a
+                  >Agentes de IA</a
                 >
               </li>
             </ul>
@@ -1061,23 +1073,31 @@
             <h3 class="text-lg font-bold mb-4">Empresa</h3>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Sobre nós</a
+                <a
+                  href="#servicos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Serviços</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Cases</a
+                <a
+                  href="#diferenciais"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Diferenciais</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Carreiras</a
+                <a
+                  href="#depoimentos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Depoimentos</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Blog</a
+                <a
+                  href="/quem-somos.html"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Quem Somos</a
                 >
               </li>
             </ul>
@@ -1116,24 +1136,12 @@
           <p class="text-gray-300 mb-4 md:mb-0">
             © 2025 Agência Kamino. Todos os direitos reservados.
           </p>
-          <nav aria-label="Links legais">
-            <ul class="flex space-x-6">
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white"
-                  >Política de Privacidade</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white"
-                  >Termos de Serviço</a
-                >
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </footer>
 
+    <!-- Toast container -->
+    <div id="toastStack" class="fixed top-6 right-6 z-[9999] space-y-4"></div>
     <script src="./src/js/script.js"></script>
   </body>
 </html>

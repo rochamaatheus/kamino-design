@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência Kamino | Anúncios</title>
+
+    <!-- Tailwind CDN (mantido) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome & Inter -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
+    <!-- Botão flutuante do WhatsApp -->
+    <aside
+      class="fixed bottom-8 right-8 z-50"
+      aria-label="Contato via WhatsApp"
+    >
+      <a
+        href="https://wa.me/5547984553370?text=Ol%C3%A1%20Ag%C3%AAncia%20Kamino%2C%20podemos%20conversar%3F"
+        class="whatsapp-bubble bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-xl hover:bg-[#128C7E] transition-colors duration-300"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir conversa no WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </aside>
+
+    <!-- Cabeçalho e navegação principal -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+      <nav
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        aria-label="Navegação principal"
+      >
+        <div class="relative flex items-center justify-between h-20">
+          <!-- Logo à esquerda -->
+          <div class="flex-shrink-0">
+            <a
+              href="/"
+              aria-label="Início"
+              class="inline-block opacity-0 animate-slide-up will-change-transform"
+            >
+              <img
+                src="./src/img/logo.png"
+                alt="Logo Agência Kamino"
+                class="w-[200px] transition duration-300 ease-in-out hover:scale-110 hover:brightness-125 will-change-transform origin-center"
+              />
+            </a>
+          </div>
+
+          <!-- Menu centralizado -->
+          <ul id="menu-header">
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#inicio"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Início
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#servicos"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Soluções
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#beneficios"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Nosso Sistema
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#depoimentos"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Depoimentos
+              </a>
+            </li>
+          </ul>
+
+          <!-- Botão à direita -->
+          <div
+            id="botao-orcar"
+            class="opacity-0 animate-slide-up will-change-transform"
+          >
+            <a href="/index.html#contato" class="btn-pulse">
+              Solicitar Orçamento
+            </a>
+          </div>
+
+          <!-- Botão mobile -->
+          <button
+            id="mobile-menu-button"
+            class="text-primary hover:text-secondary focus:outline-none"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu bg-white shadow-lg">
+        <div class="px-6 py-4 space-y-4">
+          <a
+            href="#inicio"
+            class="block mobile-nav-link text-gray-800 hover:text-primary transition-colors duration-300"
+          >
+            Início
+          </a>
+          <a
+            href="#servicos"
+            class="block mobile-nav-link text-gray-800 hover:text-primary transition-colors duration-300"
+          >
+            Soluções
+          </a>
+          <a
+            href="#beneficios"
+            class="block mobile-nav-link text-gray-800 hover:text-primary transition-colors duration-300"
+          >
+            Nosso Sistema
+          </a>
+          <a
+            href="#depoimentos"
+            class="block mobile-nav-link text-gray-800 hover:text-primary transition-colors duration-300"
+          >
+            Depoimentos
+          </a>
+          <a
+            href="/index.html#contato"
+            class="block mobile-nav-link mt-4 bg-primary text-white rounded-lg text-center py-3 font-semibold hover:bg-primary/90 transition-colors duration-300"
+          >
+            Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main id="main-content">
+      <!-- Seção Hero -->
+      <section
+        id="inicio"
+        class="relative gradient-bg text-white hero-clip pb-20 overflow-hidden"
+        aria-label="Apresentação"
+      >
+        <img
+          src="./src/img/bg.jpeg"
+          alt=""
+          class="absolute left-0 max-w-[800px] opacity-40 w-full z-[-1] pointer-events-none"
+        />
+
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 relative z-[1] flex flex-col md:flex-row items-center gap-24"
+        >
+          <!-- Texto principal -->
+          <div
+            class="md:w-1/2 mb-12 md:mb-0 opacity-0 animate-slide-left will-change-transform"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
+              Escale seu negócio com
+              <span class="text-accent">tráfego pago</span> de alta performance
+            </h1>
+            <p class="text-xl mb-8 text-blue-100">
+              Pare de queimar verba em anúncios que não convertem. Criamos
+              campanhas no Meta e Google totalmente focadas em ROAS.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <!-- Botão 1: Agendar Consultoria -->
+              <a
+                href="#contato"
+                class="bg-white text-primary px-8 py-3 rounded-md font-bold text-center transition-all duration-300 ease-in-out shadow-md hover:shadow-xl hover:-translate-y-1 hover:bg-blue-50 hover:text-primary will-change-transform"
+              >
+                Agendar Consultoria Gratuita
+              </a>
+
+              <!-- Botão 2: Conhecer Serviços -->
+              <a
+                href="#servicos"
+                class="border-2 border-white text-white px-8 py-3 rounded-md font-bold text-center transition-all duration-300 ease-in-out hover:bg-white hover:text-primary hover:-translate-y-1 hover:shadow-lg will-change-transform"
+              >
+                Conhecer Serviços
+              </a>
+            </div>
+          </div>
+
+          <!-- Card de métricas -->
+          <div
+            class="relative flex justify-center opacity-0"
+            data-animate="slide-right"
+          >
+            <div class="relative floating-anuncio">
+              <div
+                class="absolute -top-6 -left-6 w-32 h-32 bg-accent rounded-full opacity-20"
+              ></div>
+              <div
+                class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-full opacity-20"
+              ></div>
+
+              <div class="relative bg-white rounded-2xl shadow-xl p-6 max-w-sm">
+                <div class="flex justify-between items-center mb-4">
+                  <span class="text-sm font-bold text-gray-700"
+                    >Desempenho de Campanhas</span
+                  >
+                  <span
+                    class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded"
+                    >+42% ROAS</span
+                  >
+                </div>
+
+                <div
+                  class="h-36 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div>
+                      <div class="h-2 w-full bg-gray-200 rounded-full mb-1">
+                        <div
+                          class="h-2 bg-primary rounded-full"
+                          style="width: 85%"
+                        ></div>
+                      </div>
+                      <span class="text-xs text-gray-500">Meta Ads</span>
+                    </div>
+                    <div>
+                      <div class="h-2 w-full bg-gray-200 rounded-full mb-1">
+                        <div
+                          class="h-2 bg-green-500 rounded-full"
+                          style="width: 92%"
+                        ></div>
+                      </div>
+                      <span class="text-xs text-gray-500">Google Ads</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 grid grid-cols-3 gap-4">
+                  <div class="text-center">
+                    <div class="text-xl font-bold text-primary">5,8x</div>
+                    <span class="text-xs text-gray-500">ROAS Médio</span>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-xl font-bold text-green-500">-62%</div>
+                    <span class="text-xs text-gray-500">Custo por Lead</span>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-xl font-bold text-purple-500">
+                      +R$ 300K
+                    </div>
+                    <span class="text-xs text-gray-500">Receita Gerada</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Dor & Problema -->
+    <section class="py-20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 opacity-0"
+          data-animate="slide-up"
+        >
+          Seu orçamento de anúncios está
+          <span class="text-red-600">sumindo</span> sem retorno?
+        </h2>
+        <p
+          class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto opacity-0"
+          data-animate="slide-up"
+        >
+          Veja os erros mais comuns que drenam o bolso da maioria das empresas:
+        </p>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card Template -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md border-l-4 border-neutral-200 hover:border-red-600 hover:shadow-[0_10px_30px_-5px_rgba(239,68,68,0.2)] hover:-translate-y-1.5 transition-all duration-300 group will-change-transform opacity-0"
+            data-animate="slide-left"
+          >
+            <div
+              class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors"
+            >
+              <i
+                class="fas fa-money-bill-wave text-red-600 text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600"
+            >
+              Dinheiro Jogado Fora
+            </h3>
+            <p class="text-gray-600 group-hover:text-gray-800">
+              Orçamentos altos sem estratégia clara e retorno quase zero.
+            </p>
+          </div>
+
+          <!-- Resultados Inconsistentes -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md border-l-4 border-neutral-200 hover:border-red-600 hover:shadow-[0_10px_30px_-5px_rgba(239,68,68,0.2)] hover:-translate-y-1.5 transition-all duration-300 group will-change-transform opacity-0"
+            data-animate="slide-up"
+          >
+            <div
+              class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors"
+            >
+              <i
+                class="fas fa-chart-line text-red-600 text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600"
+            >
+              Resultados Inconsistentes
+            </h3>
+            <p class="text-gray-600 group-hover:text-gray-800">
+              Uma campanha vai bem, a próxima despenca. Nada previsível.
+            </p>
+          </div>
+
+          <!-- Plataformas Complexas -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md border-l-4 border-neutral-200 hover:border-red-600 hover:shadow-[0_10px_30px_-5px_rgba(239,68,68,0.2)] hover:-translate-y-1.5 transition-all duration-300 group will-change-transform opacity-0"
+            data-animate="slide-right"
+          >
+            <div
+              class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors"
+            >
+              <i
+                class="fas fa-hourglass-half text-red-600 text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600"
+            >
+              Plataformas Complexas
+            </h3>
+            <p class="text-gray-600 group-hover:text-gray-800">
+              Mais tempo brigando com os painéis do que vendendo.
+            </p>
+          </div>
+
+          <!-- Audiência Errada -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md border-l-4 border-neutral-200 hover:border-red-600 hover:shadow-[0_10px_30px_-5px_rgba(239,68,68,0.2)] hover:-translate-y-1.5 transition-all duration-300 group will-change-transform opacity-0"
+            data-animate="slide-left"
+          >
+            <div
+              class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors"
+            >
+              <i
+                class="fas fa-users text-red-600 text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600"
+            >
+              Audiência Errada
+            </h3>
+            <p class="text-gray-600 group-hover:text-gray-800">
+              Seu público ideal nem vê seus anúncios, e você paga pelos
+              curiosos.
+            </p>
+          </div>
+
+          <!-- ROAS Insuficiente -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md border-l-4 border-neutral-200 hover:border-red-600 hover:shadow-[0_10px_30px_-5px_rgba(239,68,68,0.2)] hover:-translate-y-1.5 transition-all duration-300 group will-change-transform opacity-0"
+            data-animate="slide-up"
+          >
+            <div
+              class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors"
+            >
+              <i
+                class="fas fa-balance-scale text-red-600 text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600"
+            >
+              ROAS Insuficiente
+            </h3>
+            <p class="text-gray-600 group-hover:text-gray-800">
+              Anunciar vira custo fixo, não investimento lucrativo.
+            </p>
+          </div>
+
+          <!-- Limite de Escala -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md border-l-4 border-neutral-200 hover:border-red-600 hover:shadow-[0_10px_30px_-5px_rgba(239,68,68,0.2)] hover:-translate-y-1.5 transition-all duration-300 group will-change-transform opacity-0"
+            data-animate="slide-right"
+          >
+            <div
+              class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors"
+            >
+              <i
+                class="fas fa-tachometer-alt text-red-600 text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600"
+            >
+              Limite de Escala
+            </h3>
+            <p class="text-gray-600 group-hover:text-gray-800">
+              Quando sobe o budget, só sobe o custo — sem resultado
+              proporcional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Verdade dura -->
+        <div
+          class="mt-16 border border-red-200 rounded-xl p-1 max-w-2xl mx-auto hover:border-red-500 transition-colors opacity-0"
+          data-animate="slide-up"
+        >
+          <div class="bg-white rounded-xl p-8">
+            <h3 class="text-2xl font-bold text-gray-900">
+              A verdade nua e crua:
+            </h3>
+            <p class="mt-4 text-lg text-gray-700">
+              <span class="font-bold text-red-600">92% das empresas</span> não
+              alcançam ROAS positivo tocando as campanhas por conta própria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solução -->
+    <section id="servicos" class="py-20 bg-light">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 opacity-0"
+            data-animate="slide-up"
+          >
+            Soluções de <span class="text-primary">Tráfego Pago</span> de
+            Precisão
+          </h2>
+          <p
+            class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto opacity-0"
+            data-animate="slide-up"
+          >
+            Construímos máquinas de aquisição multicanal para seu negócio
+          </p>
+        </header>
+
+        <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <!-- Meta -->
+          <div
+            class="bg-gradient-to-br from-white to-indigo-50 rounded-2xl p-8 shadow-md border border-transparent hover:border-indigo-300 hover:shadow-[0_10px_40px_-5px_rgba(99,102,241,0.2)] hover:-translate-y-1.5 transition-all duration-300 group will-change-transform opacity-0"
+            data-animate="slide-left"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center"
+              >
+                <i class="fab fa-facebook text-blue-600 text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 ml-4">
+                Meta Ads Mastery
+              </h3>
+            </div>
+            <p class="text-gray-700">
+              Segmentação cirúrgica no Facebook & Instagram para atrair quem
+              realmente compra.
+            </p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Audiências hiper-segmentadas
+              </li>
+              <li class="flex">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Criativos que travam o scroll
+              </li>
+              <li class="flex">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i> Lances
+                automáticos focados em ROAS
+              </li>
+            </ul>
+            <div
+              class="mt-8 pt-6 border-t border-gray-200 flex justify-between"
+            >
+              <span class="font-semibold">Média de resultado:</span>
+              <span class="font-bold text-primary">4,8x ROAS</span>
+            </div>
+          </div>
+          <!-- Google -->
+          <div
+            class="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8 shadow-lg border border-transparent hover:border-teal-300 hover:shadow-[0_10px_40px_-5px_rgba(16,185,129,0.2)] hover:-translate-y-1.5 transition-transform duration-300 will-change-transform opacity-0"
+            data-animate="slide-right"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center"
+              >
+                <i class="fab fa-google text-green-600 text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 ml-4">
+                Google Ads Dominance
+              </h3>
+            </div>
+            <p class="text-gray-700">
+              Capture usuários com intenção de compra no exato momento da
+              pesquisa.
+            </p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Palavras-chave de intenção comercial
+              </li>
+              <li class="flex">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Remarketing de alta eficiência
+              </li>
+              <li class="flex">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Campanhas de conquista de concorrentes
+              </li>
+            </ul>
+            <div
+              class="mt-8 pt-6 border-t border-gray-200 flex justify-between"
+            >
+              <span class="font-semibold">Média de resultado:</span>
+              <span class="font-bold text-green-600">-63% CPA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integração Multiplataforma -->
+        <div
+          class="group mt-16 gradient-bg rounded-2xl p-10 text-center text-white border border-transparent shadow-lg transform transition-all duration-300 will-change-transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 hover:bg-gradient-to-br hover:from-secondary hover:to-primary opacity-0"
+          data-animate="slide-up"
+        >
+          <h3
+            class="text-2xl md:text-3xl font-bold transition-all duration-300 group-hover:tracking-wide group-hover:underline"
+          >
+            Integração Multiplataforma
+          </h3>
+          <p
+            class="mt-4 text-xl text-blue-200 max-w-3xl mx-auto transition-colors duration-300 group-hover:text-blue-100"
+          >
+            Não rodamos anúncios soltos. Construímos sistemas de aquisição
+            integrados.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="py-20" id="beneficios">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 opacity-0"
+            data-animate="slide-up"
+          >
+            O que você vai alcançar com nosso sistema de
+            <span class="text-primary">tráfego pago</span>
+          </h2>
+          <p
+            class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto opacity-0"
+            data-animate="slide-up"
+          >
+            Não é só clique — é resultado real pra sua empresa
+          </p>
+        </header>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Crescimento -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl opacity-0"
+            data-animate="slide-left"
+          >
+            <div
+              class="w-16 h-16 rounded-lg bg-blue-500 flex items-center justify-center mb-6 transition-colors duration-300 hover:bg-blue-600"
+            >
+              <i class="fas fa-arrow-trend-up text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Crescimento Escalável
+            </h3>
+            <p class="text-gray-600">
+              Aquisição previsível que cresce junto com o seu investimento.
+            </p>
+          </div>
+          <!-- ROAS -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl opacity-0"
+            data-animate="slide-left"
+            data-delay="100"
+          >
+            <div
+              class="w-16 h-16 rounded-lg bg-green-500 flex items-center justify-center mb-6 transition-colors duration-300 hover:bg-green-600"
+            >
+              <i class="fas fa-wallet text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              ROAS 3-5x mínimo
+            </h3>
+            <p class="text-gray-600">
+              Só faz sentido se voltar mais dinheiro do que entrou.
+            </p>
+          </div>
+          <!-- Leads -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl opacity-0"
+            data-animate="slide-left"
+            data-delay="200"
+          >
+            <div
+              class="w-16 h-16 rounded-lg bg-purple-500 flex items-center justify-center mb-6 transition-colors duration-300 hover:bg-purple-600"
+            >
+              <i class="fas fa-bullseye text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Leads de Qualidade
+            </h3>
+            <p class="text-gray-600">Atraia compradores, não curiosos.</p>
+          </div>
+          <!-- Dados -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl opacity-0"
+            data-animate="slide-left"
+          >
+            <div
+              class="w-16 h-16 rounded-lg bg-orange-500 flex items-center justify-center mb-6 transition-colors duration-300 hover:bg-orange-600"
+            >
+              <i class="fas fa-chart-pie text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Decisões Baseadas em Dados
+            </h3>
+            <p class="text-gray-600">
+              Insights claros pra investir onde dá retorno.
+            </p>
+          </div>
+          <!-- Tempo -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl opacity-0"
+            data-animate="slide-left"
+            data-delay="200"
+          >
+            <div
+              class="w-16 h-16 rounded-lg bg-red-500 flex items-center justify-center mb-6 transition-colors duration-300 hover:bg-red-600"
+            >
+              <i class="fas fa-clock text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Tempo de Volta</h3>
+            <p class="text-gray-600">
+              Recupere 10+ horas semanais hoje gastas com anúncios.
+            </p>
+          </div>
+          <!-- Vantagem -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl opacity-0"
+            data-animate="slide-left"
+            data-delay="300"
+          >
+            <div
+              class="w-16 h-16 rounded-lg bg-teal-500 flex items-center justify-center mb-6 transition-colors duration-300 hover:bg-teal-600"
+            >
+              <i class="fas fa-shield-alt text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Vantagem Competitiva
+            </h3>
+            <p class="text-gray-600">
+              Estratégias que a maioria dos concorrentes nem conhece.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-16 bg-primary rounded-2xl p-10 text-white group hover:shadow-lg hover:scale-105 transform transition-all duration-300 opacity-0"
+          data-animate="slide-up"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <!-- Texto -->
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold">Mundo dos Anúncios</h3>
+              <p class="mt-4 text-xl text-blue-100">
+                Empresas que investem em campanhas orientadas por dados alcançam
+                visibilidade qualificada e vendas reais em até 30 dias.
+              </p>
+            </div>
+
+            <!-- Círculo com wave só no hover -->
+            <div class="relative flex justify-center">
+              <!-- Glow suave que só aparece e anima no hover -->
+              <span
+                class="absolute w-64 h-64 rounded-full bg-white/10 opacity-0 group-hover:opacity-50 group-hover:animate-ping transition-opacity duration-300"
+              ></span>
+
+              <!-- Camadas de blur/brilho -->
+              <div
+                class="bg-white/20 backdrop-blur-sm p-2 rounded-full w-64 h-64 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white/30 backdrop-blur-sm p-2 rounded-full w-56 h-56 flex items-center justify-center"
+                >
+                  <!-- Bolinha central com scale no hover -->
+                  <div
+                    class="bg-white rounded-full w-44 h-44 flex flex-col items-center justify-center transform transition-transform duration-300 group-hover:scale-110"
+                  >
+                    <span class="text-4xl font-bold text-primary">30 dias</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados Reais para Empresas Reais -->
+    <section id="resultados" class="py-20 gradient-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-white opacity-0"
+            data-animate="slide-up"
+          >
+            Resultados Reais para
+            <span class="text-accent">Empresas Reais</span>
+          </h2>
+          <p
+            class="mt-4 text-xl text-blue-100 max-w-3xl mx-auto opacity-0"
+            data-animate="slide-up"
+          >
+            Números que falam por si
+          </p>
+        </header>
+
+        <!-- Barra de estatísticas -->
+        <div
+          class="mt-16 bg-gradient-to-r from-primary to-secondary rounded-2xl p-10 text-white text-center"
+        >
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="opacity-0" data-animate="slide-up" data-delay="100">
+              <div class="text-4xl md:text-5xl font-bold">R$ 23M+</div>
+              <div class="mt-2 text-lg">Receita Gerada</div>
+            </div>
+            <div class="opacity-0" data-animate="slide-up" data-delay="200">
+              <div class="text-4xl md:text-5xl font-bold">5,8x</div>
+              <div class="mt-2 text-lg">ROAS Médio</div>
+            </div>
+            <div class="opacity-0" data-animate="slide-up" data-delay="300">
+              <div class="text-4xl md:text-5xl font-bold">250+</div>
+              <div class="mt-2 text-lg">Clientes Felizes</div>
+            </div>
+            <div class="opacity-0" data-animate="slide-up" data-delay="400">
+              <div class="text-4xl md:text-5xl font-bold">92%</div>
+              <div class="mt-2 text-lg">Retenção</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-10">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 opacity-0"
+            data-animate="slide-up"
+          >
+            História de
+            <span class="text-primary">sucesso</span>
+          </h2>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="group testimonial-card-anuncio rounded-2xl p-8 bg-white shadow-md transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl opacity-0"
+            data-animate="slide-left"
+          >
+            <div class="flex items-center mb-6">
+              <img
+                class="w-16 h-16 rounded-full transition-transform duration-300 ease-out group-hover:scale-110"
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Sarah Oliveira"
+              />
+              <div class="ml-4">
+                <h4
+                  class="font-bold text-lg group-hover:text-primary transition-colors duration-300"
+                >
+                  Sarah Oliveira
+                </h4>
+                <p class="text-gray-600">CEO, EcomStore</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Saímos de Facebook Ads deficitário para 6,2x ROAS em 60 dias.
+              Simplesmente incrível!"
+            </p>
+            <div class="mt-6 flex justify-between items-center">
+              <div
+                class="flex text-yellow-400 group-hover:text-yellow-500 transition-colors duration-300"
+              >
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="text-primary font-bold">+R$ 287 mil</div>
+            </div>
+          </div>
+
+          <!-- Card 2 (mesmo padrão) -->
+          <div
+            class="group testimonial-card-anuncio rounded-2xl p-8 bg-white shadow-md transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl opacity-0"
+            data-animate="slide-up"
+          >
+            <div class="flex items-center mb-6">
+              <img
+                class="w-16 h-16 rounded-full transition-transform duration-300 ease-out group-hover:scale-110"
+                src="https://randomuser.me/api/portraits/men/54.jpg"
+                alt="Michael Torres"
+              />
+              <div class="ml-4">
+                <h4
+                  class="font-bold text-lg group-hover:text-primary transition-colors duration-300"
+                >
+                  Michael Torres
+                </h4>
+                <p class="text-gray-600">Founder, TechStart</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Custo por lead caiu 73% no TikTok enquanto escalamos 5x o budget.
+              Resultado sólido."
+            </p>
+            <div class="mt-6 flex justify-between items-center">
+              <div
+                class="flex text-yellow-400 group-hover:text-yellow-500 transition-colors duration-300"
+              >
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="text-primary font-bold">-73% CPA</div>
+            </div>
+          </div>
+
+          <!-- Card 3 (mesmo padrão) -->
+          <div
+            class="group testimonial-card-anuncio rounded-2xl p-8 bg-white shadow-md transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl opacity-0"
+            data-animate="slide-right"
+          >
+            <div class="flex items-center mb-6">
+              <img
+                class="w-16 h-16 rounded-full transition-transform duration-300 ease-out group-hover:scale-110"
+                src="https://randomuser.me/api/portraits/women/32.jpg"
+                alt="Jennifer Lima"
+              />
+              <div class="ml-4">
+                <h4
+                  class="font-bold text-lg group-hover:text-primary transition-colors duration-300"
+                >
+                  Jennifer Lima
+                </h4>
+                <p class="text-gray-600">Marketing Dir., ServicePro</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Dominamos nosso nicho com Google Ads. De R$ 15 mil desperdiçados
+              para 32 leads diários qualificados."
+            </p>
+            <div class="mt-6 flex justify-between items-center">
+              <div
+                class="flex text-yellow-400 group-hover:text-yellow-500 transition-colors duration-300"
+              >
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="text-primary font-bold">+32 leads/dia</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section
+      id="cta"
+      class="relative gradient-bg text-white py-20 overflow-hidden"
+      aria-labelledby="titulo-cta"
+    >
+      <img
+        src="./src/img/bg.jpeg"
+        alt=""
+        class="absolute top-[-50px] left-0 max-w-[450px] opacity-40 w-full z-[1] pointer-events-none"
+      />
+      <div
+        class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-[1]"
+      >
+        <h2
+          id="titulo-cta"
+          class="text-3xl md:text-4xl font-bold mb-6 opacity-0"
+          data-animate="slide-up"
+          data-delay="0"
+        >
+          Pronto para turbinar seus resultados?
+        </h2>
+        <p
+          class="text-xl text-blue-100 mb-8 opacity-0"
+          data-animate="slide-up"
+          data-delay="150"
+        >
+          Solicite uma sessão estratégica gratuita. Analisamos suas campanhas e
+          entregamos um roadmap de crescimento — sem compromisso.
+        </p>
+        <div data-animate="slide-up" data-delay="300" class="opacity-0">
+          <a
+            href="#contato"
+            class="inline-block bg-white text-primary px-8 py-3 rounded-md font-bold shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:bg-secondary hover:text-white will-change-transform"
+          >
+            Agendar Consultoria
+          </a>
+        </div>
+      </div>
+      <div class="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <hr class="border-t border-gray-700" />
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="gradient-bg text-white" aria-labelledby="titulo-rodape">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Agência Kamino -->
+          <div>
+            <h2 id="titulo-rodape" class="text-xl font-bold mb-4">
+              Agência Kamino
+            </h2>
+            <p class="text-gray-300 mb-4">
+              Transformando negócios com marketing digital e tecnologia.
+            </p>
+            <nav aria-label="Redes sociais">
+              <ul class="flex space-x-4">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61571231623425&locale=pt_BR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-gray-300 hover:text-white transition-transform duration-300 will-change-transform hover:-translate-y-1"
+                    aria-label="Facebook"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-transform duration-300 will-change-transform hover:-translate-y-1"
+                    aria-label="Twitter"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/ag%C3%AAncia-kamino/about/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-gray-300 hover:text-white transition-transform duration-300 will-change-transform hover:-translate-y-1"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/agenciakamino/?utm_source=ig_web_button_share_sheet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-gray-300 hover:text-white transition-transform duration-300 will-change-transform hover:-translate-y-1"
+                    aria-label="Instagram"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Serviços -->
+          <nav aria-label="Links de serviços">
+            <h3 class="text-lg font-bold mb-4">Serviços</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="/anuncios.html" class="text-gray-300 hover:text-white"
+                  >Anúncios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/desenvolvimento.html"
+                  class="text-gray-300 hover:text-white"
+                  >Desenvolvimento</a
+                >
+              </li>
+              <li>
+                <a href="/agente-ia.html" class="text-gray-300 hover:text-white"
+                  >Agentes de IA</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Empresa -->
+          <nav aria-label="Links institucionais">
+            <h3 class="text-lg font-bold mb-4">Empresa</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/index.html#servicos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/index.html#diferenciais"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Diferenciais</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/index.html#depoimentos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Depoimentos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/quem-somos.html"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Quem Somos</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Newsletter -->
+          <section aria-label="Inscrição na newsletter">
+            <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+            <p class="text-gray-300 mb-4">
+              Receba novidades e insights diretamente no seu e-mail.
+            </p>
+            <form class="flex" aria-label="Formulário de newsletter">
+              <label for="newsletter-email" class="sr-only">Seu e-mail</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                required
+                placeholder="Seu e-mail"
+                class="px-4 py-2 rounded-l-md w-full focus:outline-none text-black"
+              />
+              <button
+                type="submit"
+                class="bg-accent px-4 py-2 rounded-r-md hover:bg-blue-500 transition-colors duration-300"
+                aria-label="Inscrever"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </section>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-300 mb-4 md:mb-0">
+            © 2025 Agência Kamino. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

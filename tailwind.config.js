@@ -1,12 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './agente-ia.html', './src/**/*.{html,js}'],
+  content: [
+    './index.html',
+    './agente-ia.html',
+    './quem-somos.html',
+    './desenvolvimento.html',
+    './src/**/*.{html,js}',
+  ],
   safelist: [
+    // Evita purgar animações que são aplicadas dinamicamente (data-animate)
     'animate-slide-right',
     'animate-slide-left',
-    'animate-slide-up',
     'animate-slide-down',
     'animate-zoom-in',
+    'animate-fade',
+    'animate-pop',
   ],
   theme: {
     extend: {
@@ -16,14 +24,15 @@ export default {
         accent: '#3b82f6',
         light: '#eff6ff',
         dark: '#1e1b4b',
-        knavy: '#0f172a',
-        kblue: '#1d4ed8',
-        kgreen: '#10b981',
-        kpurple: '#8b5cf6',
-        kcyan: '#06b6d4',
-        kglassdark: 'rgba(30, 41, 59, 0.5)',
-        kglasslight: 'rgba(241, 245, 249, 0.1)',
+        'kamino-navy': '#0f172a',
+        'kamino-blue': '#1d4ed8',
+        'kamino-green': '#10b981',
+        'kamino-purple': '#8b5cf6',
+        'kamino-cyan': '#06b6d4',
+        'glass-dark': 'rgba(30, 41, 59, 0.5)',
+        'glass-light': 'rgba(241, 245, 249, 0.1)',
       },
+
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
@@ -50,6 +59,7 @@ export default {
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
       },
+
       animation: {
         fade: 'fadeIn 0.8s ease-out forwards',
         'slide-down': 'slideDown 0.8s ease-out forwards',

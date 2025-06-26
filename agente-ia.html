@@ -3,163 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Agents & Automation by Kamino</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Agência Kamino | Agentes de IA</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style>
-      .feature-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-      }
-
-      .ai-chatbot {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-
-      .chat-bubble {
-        position: absolute;
-        background-color: #e0f2fe;
-        border-radius: 24px;
-        padding: 16px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        display: flex;
-        align-items: center;
-        animation: float 6s ease-in-out infinite;
-      }
-
-      .customer {
-        position: absolute;
-        background-color: #dbeafe;
-        border-radius: 24px;
-        padding: 16px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        display: flex;
-        align-items: center;
-        animation: float2 5s ease-in-out infinite;
-      }
-
-      .chat-icon {
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background-color: #3b82f6;
-        color: white;
-        margin-right: 12px;
-      }
-
-      .customer-icon {
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background-color: #60a5fa;
-        color: white;
-        margin-left: 12px;
-      }
-
-      @keyframes float {
-        0% {
-          transform: translateY(0px) rotate(1deg);
-        }
-        50% {
-          transform: translateY(-10px) rotate(-1deg);
-        }
-        100% {
-          transform: translateY(0px) rotate(1deg);
-        }
-      }
-
-      @keyframes float2 {
-        0% {
-          transform: translateY(10px) rotate(-2deg);
-        }
-        50% {
-          transform: translateY(-5px) rotate(1deg);
-        }
-        100% {
-          transform: translateY(10px) rotate(-2deg);
-        }
-      }
-
-      .number-input::-webkit-inner-spin-button,
-      .number-input::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-
-      .whatsapp-btn {
-        transition: all 0.3s ease;
-        background-color: #25d366;
-      }
-
-      .whatsapp-btn:hover {
-        transform: scale(1.05);
-        background-color: #128c7e;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-          0 4px 6px -2px rgba(0, 0, 0, 0.05);
-      }
-
-      .result-box {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.5s ease;
-      }
-
-      .result-box.show {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .video-container::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(
-          120deg,
-          rgba(59, 130, 246, 0.6),
-          rgba(30, 64, 175, 0.8)
-        );
-        border-radius: 1rem;
-        z-index: -1;
-        transition: all 0.3s ease;
-      }
-
-      .video-container:hover::before {
-        top: -10px;
-        left: -10px;
-        right: -10px;
-        bottom: -10px;
-        background: linear-gradient(
-          120deg,
-          rgba(59, 130, 246, 0.8),
-          rgba(30, 64, 175, 1)
-        );
-      }
-
-      .play-btn {
-        transition: all 0.3s ease;
-      }
-
-      .video-container:hover .play-btn {
-        transform: scale(1.1);
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-      }
-    </style>
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
@@ -202,54 +50,55 @@
           </div>
 
           <!-- Menu centralizado -->
-          <ul
-            class="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8"
-          >
+          <ul id="menu-header">
             <li class="opacity-0 animate-slide-up will-change-transform">
               <a
-                href="#servicos"
+                href="#inicio"
                 class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
               >
-                Serviços
+                Início
               </a>
             </li>
             <li class="opacity-0 animate-slide-up will-change-transform">
               <a
-                href="#diferenciais"
+                href="#features"
                 class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
               >
-                Diferenciais
+                Features
               </a>
             </li>
             <li class="opacity-0 animate-slide-up will-change-transform">
               <a
-                href="#depoimentos"
+                href="#demo"
                 class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
               >
-                Depoimentos
+                Demo
               </a>
             </li>
             <li class="opacity-0 animate-slide-up will-change-transform">
               <a
-                href="/quem-somos.html"
+                href="#complience"
                 class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
               >
-                Quem Somos
+                Complience
               </a>
             </li>
           </ul>
 
           <!-- Botão à direita -->
           <div
-            class="hidden md:block opacity-0 animate-slide-up will-change-transform"
+            id="botao-orcar"
+            class="opacity-0 animate-slide-up will-change-transform"
           >
-            <a href="#contato" class="btn-pulse"> Solicitar Orçamento </a>
+            <a href="/index.html#contato" class="btn-pulse">
+              Solicitar Orçamento
+            </a>
           </div>
 
           <!-- Botão mobile -->
           <button
             id="mobile-menu-button"
-            class="md:hidden text-primary hover:text-secondary focus:outline-none"
+            class="text-primary hover:text-secondary focus:outline-none"
             aria-controls="mobile-menu"
             aria-expanded="false"
             aria-label="Abrir menu"
@@ -258,10 +107,27 @@
           </button>
         </div>
       </nav>
+      <div id="mobile-menu" class="mobile-menu bg-white shadow-lg">
+        <div class="relative px-6">
+          <div class="pb-4">
+            <a href="#inicio" class="mobile-nav-link">Início</a>
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#demo" class="mobile-nav-link">Demo</a>
+            <a href="#complience" class="mobile-nav-link">Complience</a>
+            <a
+              href="/index.html#contato"
+              class="mobile-nav-link mt-4 bg-blue-500 rounded-lg text-center py-3 font-semibold hover:bg-blue-600"
+              style="color: white"
+            >
+              Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <main class="main-content gradient-bg" role="main">
+    <main class="main-content" role="main">
       <!-- Seção Hero -->
       <section
         id="inicio"
@@ -275,7 +141,7 @@
         />
 
         <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 relative z-[1] flex flex-col lg:flex-row items-center gap-16"
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 relative z-[1] flex flex-col xl:flex-row items-center gap-12 md:gap-16"
         >
           <!-- Texto principal -->
           <div
@@ -326,7 +192,7 @@
                     type="button"
                     onclick="calculateSavings()"
                     aria-label="Calcular economia"
-                    class="px-6 py-3 bg-[#1d4ed8] font-semibold rounded-lg hover:bg-kamino-darkblue transition"
+                    class="btn-geral"
                   >
                     Calcular
                   </button>
@@ -507,7 +373,7 @@
     </main>
 
     <!-- Features Section -->
-    <section class="py-16 md:py-24 bg-white">
+    <section class="py-16 md:py-24 bg-white" id="features">
       <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div
           class="text-center max-w-3xl mx-auto mb-16 opacity-0"
@@ -846,21 +712,24 @@
     </section>
 
     <!-- Demo Video Section -->
-    <section class="py-16 md:py-24 gradient-bg">
+    <section class="py-16 md:py-24 bg-light" id="demo">
       <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
         <div class="flex flex-col lg:flex-row items-center gap-12">
           <div class="lg:w-1/2 opacity-0" data-animate="slide-left">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            <span
+              class="inline-block bg-white text-primary px-3 py-1 mb-4 rounded-full font-semibold"
+              >Como funciona</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
               Veja nosso agente em ação
             </h2>
-            <p class="text-lg text-blue-100 mb-6">
+            <p class="text-lg text-gray-600 mb-6">
               Nossa IA resolve 92% das dúvidas de clientes sem intervenção
               humana. Assista ao vídeo para ver como funciona na prática.
             </p>
             <div class="mb-8">
-              <p class="font-semibold text-white mb-2">Como funciona:</p>
               <ul class="space-y-2">
-                <li class="flex">
+                <li class="flex items-center">
                   <div class="mr-3 mt-1">
                     <div
                       class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center"
@@ -868,11 +737,13 @@
                       <span class="text-white font-bold text-sm">1</span>
                     </div>
                   </div>
-                  <p class="text-blue-100">
+                  <p
+                    class="text-gray-600 transition-transform duration-300 hover:-translate-y-1 hover:text-accent will-change-transform"
+                  >
                     O cliente faz uma pergunta pelo site, app ou WhatsApp
                   </p>
                 </li>
-                <li class="flex">
+                <li class="flex items-center">
                   <div class="mr-3 mt-1">
                     <div
                       class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center"
@@ -880,11 +751,13 @@
                       <span class="text-white font-bold text-sm">2</span>
                     </div>
                   </div>
-                  <p class="text-blue-100">
+                  <p
+                    class="text-gray-600 transition-transform duration-300 hover:-translate-y-1 hover:text-accent will-change-transform"
+                  >
                     Nosso agente IA analisa contexto e histórico
                   </p>
                 </li>
-                <li class="flex">
+                <li class="flex items-center">
                   <div class="mr-3 mt-1">
                     <div
                       class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center"
@@ -892,11 +765,13 @@
                       <span class="text-white font-bold text-sm">3</span>
                     </div>
                   </div>
-                  <p class="text-blue-100">
+                  <p
+                    class="text-gray-600 transition-transform duration-300 hover:-translate-y-1 hover:text-accent will-change-transform"
+                  >
                     A resposta precisa é enviada em segundos
                   </p>
                 </li>
-                <li class="flex">
+                <li class="flex items-center">
                   <div class="mr-3 mt-1">
                     <div
                       class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center"
@@ -904,9 +779,10 @@
                       <span class="text-white font-bold text-sm">4</span>
                     </div>
                   </div>
-                  <p class="text-blue-100">
-                    Caso necessário, transfere para atendente humano com todo
-                    contexto
+                  <p
+                    class="text-gray-600 transition-transform duration-300 hover:-translate-y-1 hover:text-accent will-change-transform"
+                  >
+                    Transfere para atendente humano com todo contexto
                   </p>
                 </li>
               </ul>
@@ -950,7 +826,7 @@
                 </div>
               </div>
               <div
-                class="absolute bottom-0 left-0 right-0 bg-blue-500/70 from-dark to-transparent p-6 text-white"
+                class="absolute bottom-0 left-0 right-0 bg-blue-500/70 from-dark to-transparent p-6 text-white hover:cursor-pointer"
               >
                 <p class="font-bold text-xl">
                   Demonstração do Agente IA Kamino
@@ -966,7 +842,7 @@
     </section>
 
     <!-- Compliance Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white" id="complience">
       <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
         <div
           class="bg-blue-50 rounded-2xl border border-blue-200 p-8 md:p-12 opacity-0"
@@ -994,7 +870,7 @@
               </div>
             </div>
             <div class="flex-1">
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              <h3 class="text-2xl font-bold text-primary mb-4">
                 Segurança e Conformidade Garantidas
               </h3>
               <p class="text-gray-700 mb-4">
@@ -1030,15 +906,26 @@
     <section class="gradient-bg py-16 md:py-24">
       <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
         <div class="text-center">
-          <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-white mb-6 opacity-0"
+            data-animate="slide-up"
+          >
             Pronto para transformar seu atendimento?
           </h2>
-          <p class="text-xl text-gray-100 max-w-2xl mx-auto mb-10">
+          <p
+            class="text-xl text-gray-100 max-w-2xl mx-auto mb-10 opacity-0"
+            data-delay="200"
+            data-animate="slide-up"
+          >
             Comece agora mesmo e veja sua equipe focar no que realmente importa,
             enquanto nossa IA cuida das dúvidas recorrentes.
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center opacity-0"
+            data-delay="250"
+            data-animate="slide-up"
+          >
             <a
               href="https://wa.me/5547984553370?text=Quero%20um%20agente%20IA"
               class="whatsapp-btn inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white rounded-lg shadow-lg mb-4"
@@ -1126,30 +1013,23 @@
             <ul class="space-y-2">
               <li>
                 <a
-                  href="#servicos"
+                  href="/anuncios.html"
                   class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Marketing Digital</a
+                  >Anúncios</a
                 >
               </li>
               <li>
                 <a
-                  href="#servicos"
+                  href="/desenvolvimento.html"
                   class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Tráfego Pago</a
+                  >Desenvolvimento</a
                 >
               </li>
               <li>
                 <a
-                  href="#servicos"
+                  href="/agente-ia.html"
                   class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Páginas de Destino</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#servicos"
-                  class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Atendente de Inteligência Artificial</a
+                  >Agentes de IA</a
                 >
               </li>
             </ul>
@@ -1160,23 +1040,31 @@
             <h3 class="text-lg font-bold mb-4">Empresa</h3>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Sobre nós</a
+                <a
+                  href="/index.html#servicos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Serviços</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Cases</a
+                <a
+                  href="/index.html#diferenciais"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Diferenciais</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Carreiras</a
+                <a
+                  href="/index.html#depoimentos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Depoimentos</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Blog</a
+                <a
+                  href="/quem-somos.html"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Quem Somos</a
                 >
               </li>
             </ul>
@@ -1215,20 +1103,6 @@
           <p class="text-gray-300 mb-4 md:mb-0">
             © 2025 Agência Kamino. Todos os direitos reservados.
           </p>
-          <nav aria-label="Links legais">
-            <ul class="flex space-x-6">
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white"
-                  >Política de Privacidade</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white"
-                  >Termos de Serviço</a
-                >
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </footer>
@@ -1272,6 +1146,12 @@
         if (ticketInput.value) {
           calculateSavings();
         }
+      });
+
+      const form = document.querySelector('#savingsCalculator');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        calculateSavings();
       });
     </script>
     <script src="./src/js/script.js"></script>

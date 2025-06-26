@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre Nós • Agência Kamino</title>
+    <title>Agência Kamino | Quem Somos</title>
 
     <!-- Ícones -->
     <link
@@ -60,34 +60,26 @@
           >
             <li class="opacity-0 animate-slide-up will-change-transform">
               <a
-                href="#servicos"
-                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
-              >
-                Serviços
-              </a>
-            </li>
-            <li class="opacity-0 animate-slide-up will-change-transform">
-              <a
-                href="#diferenciais"
-                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
-              >
-                Diferenciais
-              </a>
-            </li>
-            <li class="opacity-0 animate-slide-up will-change-transform">
-              <a
-                href="#depoimentos"
-                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
-              >
-                Depoimentos
-              </a>
-            </li>
-            <li class="opacity-0 animate-slide-up will-change-transform">
-              <a
                 href="/quem-somos.html"
                 class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
               >
-                Quem Somos
+                Início
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#valores"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Valores
+              </a>
+            </li>
+            <li class="opacity-0 animate-slide-up will-change-transform">
+              <a
+                href="#regras"
+                class="relative text-primary px-3 py-2 font-medium transition duration-300 hover:text-[#1e40af] before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-[#1e40af] before:scale-x-0 before:origin-center before:transition-transform before:duration-300 hover:before:scale-x-100"
+              >
+                Regras
               </a>
             </li>
           </ul>
@@ -96,7 +88,9 @@
           <div
             class="hidden md:block opacity-0 animate-slide-up will-change-transform"
           >
-            <a href="#contato" class="btn-pulse"> Solicitar Orçamento </a>
+            <a href="/index.html#contato" class="btn-pulse">
+              Solicitar Orçamento
+            </a>
           </div>
 
           <!-- Botão mobile -->
@@ -111,6 +105,23 @@
           </button>
         </div>
       </nav>
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="mobile-menu bg-white shadow-lg">
+        <div class="relative px-6">
+          <div class="pb-4">
+            <a href="/quem-somos.html" class="mobile-nav-link">Início</a>
+            <a href="#valores" class="mobile-nav-link">Valores</a>
+            <a href="#regras" class="mobile-nav-link">Regras</a>
+            <a
+              href="/index.html#contato"
+              class="mobile-nav-link mt-4 bg-blue-500 rounded-lg text-center py-3 font-semibold hover:bg-blue-600"
+              style="color: white"
+            >
+              Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Conteúdo principal -->
@@ -158,7 +169,11 @@
       </section>
 
       <!-- Missão / Visão / Valores -->
-      <section class="py-20 bg-white" aria-labelledby="titulo-bussola">
+      <section
+        class="py-20 bg-white"
+        aria-labelledby="titulo-bussola"
+        id="valores"
+      >
         <header class="text-center mb-16 opacity-0" data-animate="slide-down">
           <h2
             id="titulo-bussola"
@@ -220,7 +235,11 @@
       </section>
 
       <!-- Como Trabalhamos -->
-      <section class="bg-light py-12" aria-labelledby="titulo-como-trabalhamos">
+      <section
+        class="bg-light py-12"
+        aria-labelledby="titulo-como-trabalhamos"
+        id="regras"
+      >
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <header class="opacity-0" data-animate="slide-down" data-delay="100">
             <h2
@@ -231,7 +250,7 @@
             </h2>
           </header>
 
-          <ol class="space-y-8 max-w-3xl mx-auto list-decimal list-inside">
+          <ol class="space-y-8 max-w-3xl mx-auto list-inside">
             <li
               class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out opacity-0"
               data-animate="slide-right"
@@ -250,7 +269,7 @@
             <li
               class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out opacity-0"
               data-animate="slide-left"
-              data-delay="300"
+              data-delay="200"
             >
               <h3 class="text-xl font-bold text-primary mb-2">
                 Dados que acendem ideias
@@ -265,7 +284,7 @@
             <li
               class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 hover:ring-2 hover:ring-primary transition-all duration-300 ease-in-out opacity-0"
               data-animate="slide-right"
-              data-delay="500"
+              data-delay="300"
             >
               <h3 class="text-xl font-bold text-primary mb-2">
                 Clareza que move resultados
@@ -302,7 +321,7 @@
             clareza e foco.
           </p>
           <a
-            href="/#contato"
+            href="./index.html#contato"
             class="inline-flex items-center group bg-primary text-white px-8 py-3 rounded-md font-bold shadow-md transition-all duration-300 hover:bg-secondary hover:-translate-y-1 opacity-0"
             data-animate="slide-down"
             data-delay="200"
@@ -384,31 +403,20 @@
             <h3 class="text-lg font-bold mb-4">Serviços</h3>
             <ul class="space-y-2">
               <li>
-                <a
-                  href="#servicos"
-                  class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Marketing Digital</a
+                <a href="/anuncios.html" class="text-gray-300 hover:text-white"
+                  >Anúncios</a
                 >
               </li>
               <li>
                 <a
-                  href="#servicos"
-                  class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Tráfego Pago</a
+                  href="/desenvolvimento.html"
+                  class="text-gray-300 hover:text-white"
+                  >Desenvolvimento</a
                 >
               </li>
               <li>
-                <a
-                  href="#servicos"
-                  class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Páginas de Destino</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#servicos"
-                  class="text-gray-300 pt-4 pb-4 hover:text-white"
-                  >Atendente de Inteligência Artificial</a
+                <a href="/agente-ia.html" class="text-gray-300 hover:text-white"
+                  >Agentes de IA</a
                 >
               </li>
             </ul>
@@ -419,23 +427,31 @@
             <h3 class="text-lg font-bold mb-4">Empresa</h3>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Sobre nós</a
+                <a
+                  href="/index.html#servicos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Serviços</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Cases</a
+                <a
+                  href="/index.html#diferenciais"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Diferenciais</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Carreiras</a
+                <a
+                  href="/index.html#depoimentos"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Depoimentos</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-300 pt-2 pb-2 hover:text-white"
-                  >Blog</a
+                <a
+                  href="/quem-somos.html"
+                  class="text-gray-300 pt-2 pb-2 hover:text-white"
+                  >Quem Somos</a
                 >
               </li>
             </ul>
@@ -474,20 +490,6 @@
           <p class="text-gray-300 mb-4 md:mb-0">
             © 2025 Agência Kamino. Todos os direitos reservados.
           </p>
-          <nav aria-label="Links legais">
-            <ul class="flex space-x-6">
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white"
-                  >Política de Privacidade</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white"
-                  >Termos de Serviço</a
-                >
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </footer>
